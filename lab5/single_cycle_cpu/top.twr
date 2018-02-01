@@ -1,0 +1,165 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\iSe\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml top.twx top.ncd -o top.twr top.pcf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+pc<0>       |         8.055(R)|      SLOW  |         4.292(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<1>       |         7.690(R)|      SLOW  |         4.080(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<2>       |         7.526(R)|      SLOW  |         4.012(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<3>       |         6.900(R)|      SLOW  |         3.589(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<4>       |         7.186(R)|      SLOW  |         3.763(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<5>       |         7.220(R)|      SLOW  |         3.772(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<6>       |         7.049(R)|      SLOW  |         3.668(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<7>       |         7.024(R)|      SLOW  |         3.661(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+pc<8>       |         7.210(R)|      SLOW  |         3.747(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rom_a<2>    |         9.657(R)|      SLOW  |         5.285(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rom_a<3>    |         9.643(R)|      SLOW  |         5.284(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rom_a<4>    |         9.923(R)|      SLOW  |         5.476(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+rom_a<5>    |        10.227(R)|      SLOW  |         5.704(R)|      FAST  |clk_IBUF_BUFG     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock rst_n to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                    | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                   | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+alu_b<0>    |         8.741(F)|      SLOW  |         4.791(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<1>    |         8.432(F)|      SLOW  |         4.607(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<2>    |         8.525(F)|      SLOW  |         4.640(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<3>    |         8.452(F)|      SLOW  |         4.553(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<4>    |         7.259(F)|      SLOW  |         3.794(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<5>    |         7.120(F)|      SLOW  |         3.689(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<6>    |         7.858(F)|      SLOW  |         4.194(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<7>    |         8.237(F)|      SLOW  |         4.421(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<8>    |         7.208(F)|      SLOW  |         3.801(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<9>    |         7.316(F)|      SLOW  |         3.824(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<10>   |         6.993(F)|      SLOW  |         3.611(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<11>   |         7.011(F)|      SLOW  |         3.665(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<12>   |         6.995(F)|      SLOW  |         3.601(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<13>   |         6.862(F)|      SLOW  |         3.533(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<14>   |         7.191(F)|      SLOW  |         3.751(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<15>   |         6.925(F)|      SLOW  |         3.602(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<16>   |         7.275(F)|      SLOW  |         3.807(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<17>   |         7.332(F)|      SLOW  |         3.818(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<18>   |         7.661(F)|      SLOW  |         4.012(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<19>   |         7.397(F)|      SLOW  |         3.865(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<20>   |         8.156(F)|      SLOW  |         4.297(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<21>   |         8.034(F)|      SLOW  |         4.233(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<22>   |         8.693(F)|      SLOW  |         4.695(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<23>   |         8.426(F)|      SLOW  |         4.545(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<24>   |         9.748(F)|      SLOW  |         5.312(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<25>   |         8.595(F)|      SLOW  |         4.623(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<26>   |         9.172(F)|      SLOW  |         4.969(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<27>   |         9.064(F)|      SLOW  |         4.920(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<28>   |         8.330(F)|      SLOW  |         4.485(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<29>   |         8.354(F)|      SLOW  |         4.524(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<30>   |         8.107(F)|      SLOW  |         4.365(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+alu_b<31>   |         8.067(F)|      SLOW  |         4.325(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_addr<0>  |         5.707(F)|      SLOW  |         2.686(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_addr<1>  |         5.707(F)|      SLOW  |         2.686(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_addr<2>  |         5.714(F)|      SLOW  |         2.693(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_addr<3>  |         5.714(F)|      SLOW  |         2.693(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_addr<4>  |         5.718(F)|      SLOW  |         2.697(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<0>   |         9.418(F)|      SLOW  |         5.152(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<1>   |         8.826(F)|      SLOW  |         4.793(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<2>   |         9.461(F)|      SLOW  |         5.159(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<3>   |         9.516(F)|      SLOW  |         5.221(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<4>   |         9.296(F)|      SLOW  |         5.055(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<5>   |         9.372(F)|      SLOW  |         5.130(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<6>   |         8.903(F)|      SLOW  |         4.895(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<7>   |         9.314(F)|      SLOW  |         5.117(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<8>   |         9.480(F)|      SLOW  |         5.378(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<9>   |         9.050(F)|      SLOW  |         4.985(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<10>  |         8.956(F)|      SLOW  |         4.861(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<11>  |         9.155(F)|      SLOW  |         4.969(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<12>  |         8.538(F)|      SLOW  |         4.611(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<13>  |         8.806(F)|      SLOW  |         4.818(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<14>  |         9.502(F)|      SLOW  |         5.213(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<15>  |         8.749(F)|      SLOW  |         4.766(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<16>  |         8.951(F)|      SLOW  |         4.875(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<17>  |         8.812(F)|      SLOW  |         4.795(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<18>  |         8.262(F)|      SLOW  |         4.423(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<19>  |         8.453(F)|      SLOW  |         4.545(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<20>  |         8.416(F)|      SLOW  |         4.545(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<21>  |         8.377(F)|      SLOW  |         4.498(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<22>  |         8.272(F)|      SLOW  |         4.445(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<23>  |         8.062(F)|      SLOW  |         4.316(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<24>  |         8.230(F)|      SLOW  |         4.411(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<25>  |         8.393(F)|      SLOW  |         4.507(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<26>  |         8.463(F)|      SLOW  |         4.570(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<27>  |         8.801(F)|      SLOW  |         4.746(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<28>  |         8.147(F)|      SLOW  |         4.334(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<29>  |         8.109(F)|      SLOW  |         4.316(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<30>  |         9.544(F)|      SLOW  |         5.344(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+r3_din<31>  |         8.038(F)|      SLOW  |         4.215(F)|      FAST  |rst_n_IBUF_BUFG                     |   0.000|
+ram_a<0>    |        11.287(F)|      SLOW  |         6.749(F)|      FAST  |uut/rst_n_instruction[31]_AND_1281_o|   0.000|
+ram_a<1>    |        10.860(F)|      SLOW  |         6.493(F)|      FAST  |uut/rst_n_instruction[31]_AND_1281_o|   0.000|
+ram_a<2>    |        10.502(F)|      SLOW  |         6.275(F)|      FAST  |uut/rst_n_instruction[31]_AND_1281_o|   0.000|
+ram_a<3>    |        10.493(F)|      SLOW  |         6.259(F)|      FAST  |uut/rst_n_instruction[31]_AND_1281_o|   0.000|
+ram_a<4>    |        10.493(F)|      SLOW  |         6.259(F)|      FAST  |uut/rst_n_instruction[31]_AND_1281_o|   0.000|
+ram_a<5>    |        10.502(F)|      SLOW  |         6.275(F)|      FAST  |uut/rst_n_instruction[31]_AND_1281_o|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.813|   10.562|         |         |
+rst_n          |    6.749|   10.287|    4.604|    4.604|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst_n
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    7.787|   13.042|
+rst_n          |         |         |    6.106|    8.861|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Apr 17 22:39:08 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 260 MB
+
+
+

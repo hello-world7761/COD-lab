@@ -1,0 +1,28 @@
+Command line:
+   testofall_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  18738
+
+Tue Apr 18 13:54:54 2017
+
+
+ Elaboration Time: 0.203125 sec
+
+ Current Memory Usage: 1346.56 Meg
+
+ Total Signals          : 191
+ Total Nets             : 1321
+ Total Signal Drivers   : 86
+ Total Blocks           : 16
+ Total Primitive Blocks : 10
+ Total Processes        : 117
+ Total Traceable Variables  : 154
+ Total Scalar Nets and Variables : 14438
+
+ Total Simulation Time: 1.46875 sec
+
+ Current Memory Usage: 402.809 Meg
+
+Tue Apr 18 15:44:01 2017
+

@@ -1,0 +1,57 @@
+Running: D:\study\dig\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/study/COD lab/pipe/cpupipline/test_isim_beh.exe -prj D:/study/COD lab/pipe/cpupipline/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/REG_FILE.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/ipcore_dir/ROM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/ipcore_dir/DRAM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/forward.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/cntforshow.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/ALU.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/WB.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/show.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/MEM_WB.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/MEM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/IF_ID.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/IF.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/ID_EX.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/ID.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/Hazard.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/EX_MEM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/EX.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/top.v" into library work
+Analyzing Verilog file "D:/study/COD lab/pipe/cpupipline/test.v" into library work
+Analyzing Verilog file "D:/study/dig/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/study/COD lab/pipe/cpupipline/IF.v" Line 97: Size mismatch in connection of port <a>. Formal port size is 10-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module ROM
+Compiling module IF
+Compiling module IF_ID
+Compiling module REG_FILE
+Compiling module ID
+Compiling module ID_EX
+Compiling module ALU
+Compiling module forward
+Compiling module EX
+Compiling module EX_MEM
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module DRAM
+Compiling module MEM
+Compiling module MEM_WB
+Compiling module WB
+Compiling module Hazard
+Compiling module cntforshow
+Compiling module show
+Compiling module top
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test_isim_beh.exe.sim\libPortability.dll".
+Compiled 22 Verilog Units
+Built simulation executable D:/study/COD lab/pipe/cpupipline/test_isim_beh.exe
+Fuse Memory Usage: 31508 KB
+Fuse CPU Usage: 640 ms

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/study/COD lab/lab3/TEST1/lab3/top.xst" -ofn "D:/study/COD lab/lab3/TEST1/lab3/top.syr" 
+xst -intstyle ise -ifn "D:/study/COD lab/lab3/TEST1/lab3/top.xst" -ofn "D:/study/COD lab/lab3/TEST1/lab3/top.syr" 

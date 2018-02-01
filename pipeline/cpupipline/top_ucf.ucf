@@ -1,0 +1,25 @@
+NET"clk" LOC = "V10";
+NET"rst_n" LOC = "T5";
+NET"memread_en" LOC = "V8";
+NET"out_addr<7>" LOC = "C4";
+NET"out_addr<6>" LOC = "B8";
+NET"out_addr<0>" LOC = "T10";
+NET"out_addr<1>" LOC = "T9";
+NET"out_addr<2>" LOC = "V9";
+NET"out_addr<3>" LOC = "M8";
+NET"out_addr<4>" LOC = "N8";
+NET"out_addr<5>" LOC = "U8";
+
+NET "sel<0>" LOC = "N16";
+NET "sel<1>" LOC = "N15";
+NET "sel<2>" LOC = "P18";
+NET "sel<3>" LOC = "P17";
+
+NET "show_data<7>" LOC = "T17";
+NET "show_data<6>" LOC = "T18";
+NET "show_data<5>" LOC = "U17";
+NET "show_data<4>" LOC = "U18";
+NET "show_data<3>" LOC = "M14";
+NET "show_data<2>" LOC = "N14";
+NET "show_data<1>" LOC = "L14";
+NET "show_data<0>" LOC = "M13";

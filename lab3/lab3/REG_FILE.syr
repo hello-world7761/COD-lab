@@ -1,0 +1,2911 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: REG_FILE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "REG_FILE.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "REG_FILE"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : REG_FILE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\study\COD lab\lab3\REG_FILE.v" into library work
+Parsing module <REG_FILE>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <REG_FILE>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <REG_FILE>.
+    Related source file is "D:\study\COD lab\lab3\REG_FILE.v".
+    Found 32-bit register for signal <r1_dout>.
+    Found 32-bit register for signal <r2_dout>.
+    Found 1-bit register for signal <register_31<1023>>.
+    Found 1-bit register for signal <register_31<1022>>.
+    Found 1-bit register for signal <register_31<1021>>.
+    Found 1-bit register for signal <register_31<1020>>.
+    Found 1-bit register for signal <register_31<1019>>.
+    Found 1-bit register for signal <register_31<1018>>.
+    Found 1-bit register for signal <register_31<1017>>.
+    Found 1-bit register for signal <register_31<1016>>.
+    Found 1-bit register for signal <register_31<1015>>.
+    Found 1-bit register for signal <register_31<1014>>.
+    Found 1-bit register for signal <register_31<1013>>.
+    Found 1-bit register for signal <register_31<1012>>.
+    Found 1-bit register for signal <register_31<1011>>.
+    Found 1-bit register for signal <register_31<1010>>.
+    Found 1-bit register for signal <register_31<1009>>.
+    Found 1-bit register for signal <register_31<1008>>.
+    Found 1-bit register for signal <register_31<1007>>.
+    Found 1-bit register for signal <register_31<1006>>.
+    Found 1-bit register for signal <register_31<1005>>.
+    Found 1-bit register for signal <register_31<1004>>.
+    Found 1-bit register for signal <register_31<1003>>.
+    Found 1-bit register for signal <register_31<1002>>.
+    Found 1-bit register for signal <register_31<1001>>.
+    Found 1-bit register for signal <register_31<1000>>.
+    Found 1-bit register for signal <register_31<999>>.
+    Found 1-bit register for signal <register_31<998>>.
+    Found 1-bit register for signal <register_31<997>>.
+    Found 1-bit register for signal <register_31<996>>.
+    Found 1-bit register for signal <register_31<995>>.
+    Found 1-bit register for signal <register_31<994>>.
+    Found 1-bit register for signal <register_31<993>>.
+    Found 1-bit register for signal <register_31<992>>.
+    Found 1-bit register for signal <register_31<991>>.
+    Found 1-bit register for signal <register_31<990>>.
+    Found 1-bit register for signal <register_31<989>>.
+    Found 1-bit register for signal <register_31<988>>.
+    Found 1-bit register for signal <register_31<987>>.
+    Found 1-bit register for signal <register_31<986>>.
+    Found 1-bit register for signal <register_31<985>>.
+    Found 1-bit register for signal <register_31<984>>.
+    Found 1-bit register for signal <register_31<983>>.
+    Found 1-bit register for signal <register_31<982>>.
+    Found 1-bit register for signal <register_31<981>>.
+    Found 1-bit register for signal <register_31<980>>.
+    Found 1-bit register for signal <register_31<979>>.
+    Found 1-bit register for signal <register_31<978>>.
+    Found 1-bit register for signal <register_31<977>>.
+    Found 1-bit register for signal <register_31<976>>.
+    Found 1-bit register for signal <register_31<975>>.
+    Found 1-bit register for signal <register_31<974>>.
+    Found 1-bit register for signal <register_31<973>>.
+    Found 1-bit register for signal <register_31<972>>.
+    Found 1-bit register for signal <register_31<971>>.
+    Found 1-bit register for signal <register_31<970>>.
+    Found 1-bit register for signal <register_31<969>>.
+    Found 1-bit register for signal <register_31<968>>.
+    Found 1-bit register for signal <register_31<967>>.
+    Found 1-bit register for signal <register_31<966>>.
+    Found 1-bit register for signal <register_31<965>>.
+    Found 1-bit register for signal <register_31<964>>.
+    Found 1-bit register for signal <register_31<963>>.
+    Found 1-bit register for signal <register_31<962>>.
+    Found 1-bit register for signal <register_31<961>>.
+    Found 1-bit register for signal <register_31<960>>.
+    Found 1-bit register for signal <register_31<959>>.
+    Found 1-bit register for signal <register_31<958>>.
+    Found 1-bit register for signal <register_31<957>>.
+    Found 1-bit register for signal <register_31<956>>.
+    Found 1-bit register for signal <register_31<955>>.
+    Found 1-bit register for signal <register_31<954>>.
+    Found 1-bit register for signal <register_31<953>>.
+    Found 1-bit register for signal <register_31<952>>.
+    Found 1-bit register for signal <register_31<951>>.
+    Found 1-bit register for signal <register_31<950>>.
+    Found 1-bit register for signal <register_31<949>>.
+    Found 1-bit register for signal <register_31<948>>.
+    Found 1-bit register for signal <register_31<947>>.
+    Found 1-bit register for signal <register_31<946>>.
+    Found 1-bit register for signal <register_31<945>>.
+    Found 1-bit register for signal <register_31<944>>.
+    Found 1-bit register for signal <register_31<943>>.
+    Found 1-bit register for signal <register_31<942>>.
+    Found 1-bit register for signal <register_31<941>>.
+    Found 1-bit register for signal <register_31<940>>.
+    Found 1-bit register for signal <register_31<939>>.
+    Found 1-bit register for signal <register_31<938>>.
+    Found 1-bit register for signal <register_31<937>>.
+    Found 1-bit register for signal <register_31<936>>.
+    Found 1-bit register for signal <register_31<935>>.
+    Found 1-bit register for signal <register_31<934>>.
+    Found 1-bit register for signal <register_31<933>>.
+    Found 1-bit register for signal <register_31<932>>.
+    Found 1-bit register for signal <register_31<931>>.
+    Found 1-bit register for signal <register_31<930>>.
+    Found 1-bit register for signal <register_31<929>>.
+    Found 1-bit register for signal <register_31<928>>.
+    Found 1-bit register for signal <register_31<927>>.
+    Found 1-bit register for signal <register_31<926>>.
+    Found 1-bit register for signal <register_31<925>>.
+    Found 1-bit register for signal <register_31<924>>.
+    Found 1-bit register for signal <register_31<923>>.
+    Found 1-bit register for signal <register_31<922>>.
+    Found 1-bit register for signal <register_31<921>>.
+    Found 1-bit register for signal <register_31<920>>.
+    Found 1-bit register for signal <register_31<919>>.
+    Found 1-bit register for signal <register_31<918>>.
+    Found 1-bit register for signal <register_31<917>>.
+    Found 1-bit register for signal <register_31<916>>.
+    Found 1-bit register for signal <register_31<915>>.
+    Found 1-bit register for signal <register_31<914>>.
+    Found 1-bit register for signal <register_31<913>>.
+    Found 1-bit register for signal <register_31<912>>.
+    Found 1-bit register for signal <register_31<911>>.
+    Found 1-bit register for signal <register_31<910>>.
+    Found 1-bit register for signal <register_31<909>>.
+    Found 1-bit register for signal <register_31<908>>.
+    Found 1-bit register for signal <register_31<907>>.
+    Found 1-bit register for signal <register_31<906>>.
+    Found 1-bit register for signal <register_31<905>>.
+    Found 1-bit register for signal <register_31<904>>.
+    Found 1-bit register for signal <register_31<903>>.
+    Found 1-bit register for signal <register_31<902>>.
+    Found 1-bit register for signal <register_31<901>>.
+    Found 1-bit register for signal <register_31<900>>.
+    Found 1-bit register for signal <register_31<899>>.
+    Found 1-bit register for signal <register_31<898>>.
+    Found 1-bit register for signal <register_31<897>>.
+    Found 1-bit register for signal <register_31<896>>.
+    Found 1-bit register for signal <register_31<895>>.
+    Found 1-bit register for signal <register_31<894>>.
+    Found 1-bit register for signal <register_31<893>>.
+    Found 1-bit register for signal <register_31<892>>.
+    Found 1-bit register for signal <register_31<891>>.
+    Found 1-bit register for signal <register_31<890>>.
+    Found 1-bit register for signal <register_31<889>>.
+    Found 1-bit register for signal <register_31<888>>.
+    Found 1-bit register for signal <register_31<887>>.
+    Found 1-bit register for signal <register_31<886>>.
+    Found 1-bit register for signal <register_31<885>>.
+    Found 1-bit register for signal <register_31<884>>.
+    Found 1-bit register for signal <register_31<883>>.
+    Found 1-bit register for signal <register_31<882>>.
+    Found 1-bit register for signal <register_31<881>>.
+    Found 1-bit register for signal <register_31<880>>.
+    Found 1-bit register for signal <register_31<879>>.
+    Found 1-bit register for signal <register_31<878>>.
+    Found 1-bit register for signal <register_31<877>>.
+    Found 1-bit register for signal <register_31<876>>.
+    Found 1-bit register for signal <register_31<875>>.
+    Found 1-bit register for signal <register_31<874>>.
+    Found 1-bit register for signal <register_31<873>>.
+    Found 1-bit register for signal <register_31<872>>.
+    Found 1-bit register for signal <register_31<871>>.
+    Found 1-bit register for signal <register_31<870>>.
+    Found 1-bit register for signal <register_31<869>>.
+    Found 1-bit register for signal <register_31<868>>.
+    Found 1-bit register for signal <register_31<867>>.
+    Found 1-bit register for signal <register_31<866>>.
+    Found 1-bit register for signal <register_31<865>>.
+    Found 1-bit register for signal <register_31<864>>.
+    Found 1-bit register for signal <register_31<863>>.
+    Found 1-bit register for signal <register_31<862>>.
+    Found 1-bit register for signal <register_31<861>>.
+    Found 1-bit register for signal <register_31<860>>.
+    Found 1-bit register for signal <register_31<859>>.
+    Found 1-bit register for signal <register_31<858>>.
+    Found 1-bit register for signal <register_31<857>>.
+    Found 1-bit register for signal <register_31<856>>.
+    Found 1-bit register for signal <register_31<855>>.
+    Found 1-bit register for signal <register_31<854>>.
+    Found 1-bit register for signal <register_31<853>>.
+    Found 1-bit register for signal <register_31<852>>.
+    Found 1-bit register for signal <register_31<851>>.
+    Found 1-bit register for signal <register_31<850>>.
+    Found 1-bit register for signal <register_31<849>>.
+    Found 1-bit register for signal <register_31<848>>.
+    Found 1-bit register for signal <register_31<847>>.
+    Found 1-bit register for signal <register_31<846>>.
+    Found 1-bit register for signal <register_31<845>>.
+    Found 1-bit register for signal <register_31<844>>.
+    Found 1-bit register for signal <register_31<843>>.
+    Found 1-bit register for signal <register_31<842>>.
+    Found 1-bit register for signal <register_31<841>>.
+    Found 1-bit register for signal <register_31<840>>.
+    Found 1-bit register for signal <register_31<839>>.
+    Found 1-bit register for signal <register_31<838>>.
+    Found 1-bit register for signal <register_31<837>>.
+    Found 1-bit register for signal <register_31<836>>.
+    Found 1-bit register for signal <register_31<835>>.
+    Found 1-bit register for signal <register_31<834>>.
+    Found 1-bit register for signal <register_31<833>>.
+    Found 1-bit register for signal <register_31<832>>.
+    Found 1-bit register for signal <register_31<831>>.
+    Found 1-bit register for signal <register_31<830>>.
+    Found 1-bit register for signal <register_31<829>>.
+    Found 1-bit register for signal <register_31<828>>.
+    Found 1-bit register for signal <register_31<827>>.
+    Found 1-bit register for signal <register_31<826>>.
+    Found 1-bit register for signal <register_31<825>>.
+    Found 1-bit register for signal <register_31<824>>.
+    Found 1-bit register for signal <register_31<823>>.
+    Found 1-bit register for signal <register_31<822>>.
+    Found 1-bit register for signal <register_31<821>>.
+    Found 1-bit register for signal <register_31<820>>.
+    Found 1-bit register for signal <register_31<819>>.
+    Found 1-bit register for signal <register_31<818>>.
+    Found 1-bit register for signal <register_31<817>>.
+    Found 1-bit register for signal <register_31<816>>.
+    Found 1-bit register for signal <register_31<815>>.
+    Found 1-bit register for signal <register_31<814>>.
+    Found 1-bit register for signal <register_31<813>>.
+    Found 1-bit register for signal <register_31<812>>.
+    Found 1-bit register for signal <register_31<811>>.
+    Found 1-bit register for signal <register_31<810>>.
+    Found 1-bit register for signal <register_31<809>>.
+    Found 1-bit register for signal <register_31<808>>.
+    Found 1-bit register for signal <register_31<807>>.
+    Found 1-bit register for signal <register_31<806>>.
+    Found 1-bit register for signal <register_31<805>>.
+    Found 1-bit register for signal <register_31<804>>.
+    Found 1-bit register for signal <register_31<803>>.
+    Found 1-bit register for signal <register_31<802>>.
+    Found 1-bit register for signal <register_31<801>>.
+    Found 1-bit register for signal <register_31<800>>.
+    Found 1-bit register for signal <register_31<799>>.
+    Found 1-bit register for signal <register_31<798>>.
+    Found 1-bit register for signal <register_31<797>>.
+    Found 1-bit register for signal <register_31<796>>.
+    Found 1-bit register for signal <register_31<795>>.
+    Found 1-bit register for signal <register_31<794>>.
+    Found 1-bit register for signal <register_31<793>>.
+    Found 1-bit register for signal <register_31<792>>.
+    Found 1-bit register for signal <register_31<791>>.
+    Found 1-bit register for signal <register_31<790>>.
+    Found 1-bit register for signal <register_31<789>>.
+    Found 1-bit register for signal <register_31<788>>.
+    Found 1-bit register for signal <register_31<787>>.
+    Found 1-bit register for signal <register_31<786>>.
+    Found 1-bit register for signal <register_31<785>>.
+    Found 1-bit register for signal <register_31<784>>.
+    Found 1-bit register for signal <register_31<783>>.
+    Found 1-bit register for signal <register_31<782>>.
+    Found 1-bit register for signal <register_31<781>>.
+    Found 1-bit register for signal <register_31<780>>.
+    Found 1-bit register for signal <register_31<779>>.
+    Found 1-bit register for signal <register_31<778>>.
+    Found 1-bit register for signal <register_31<777>>.
+    Found 1-bit register for signal <register_31<776>>.
+    Found 1-bit register for signal <register_31<775>>.
+    Found 1-bit register for signal <register_31<774>>.
+    Found 1-bit register for signal <register_31<773>>.
+    Found 1-bit register for signal <register_31<772>>.
+    Found 1-bit register for signal <register_31<771>>.
+    Found 1-bit register for signal <register_31<770>>.
+    Found 1-bit register for signal <register_31<769>>.
+    Found 1-bit register for signal <register_31<768>>.
+    Found 1-bit register for signal <register_31<767>>.
+    Found 1-bit register for signal <register_31<766>>.
+    Found 1-bit register for signal <register_31<765>>.
+    Found 1-bit register for signal <register_31<764>>.
+    Found 1-bit register for signal <register_31<763>>.
+    Found 1-bit register for signal <register_31<762>>.
+    Found 1-bit register for signal <register_31<761>>.
+    Found 1-bit register for signal <register_31<760>>.
+    Found 1-bit register for signal <register_31<759>>.
+    Found 1-bit register for signal <register_31<758>>.
+    Found 1-bit register for signal <register_31<757>>.
+    Found 1-bit register for signal <register_31<756>>.
+    Found 1-bit register for signal <register_31<755>>.
+    Found 1-bit register for signal <register_31<754>>.
+    Found 1-bit register for signal <register_31<753>>.
+    Found 1-bit register for signal <register_31<752>>.
+    Found 1-bit register for signal <register_31<751>>.
+    Found 1-bit register for signal <register_31<750>>.
+    Found 1-bit register for signal <register_31<749>>.
+    Found 1-bit register for signal <register_31<748>>.
+    Found 1-bit register for signal <register_31<747>>.
+    Found 1-bit register for signal <register_31<746>>.
+    Found 1-bit register for signal <register_31<745>>.
+    Found 1-bit register for signal <register_31<744>>.
+    Found 1-bit register for signal <register_31<743>>.
+    Found 1-bit register for signal <register_31<742>>.
+    Found 1-bit register for signal <register_31<741>>.
+    Found 1-bit register for signal <register_31<740>>.
+    Found 1-bit register for signal <register_31<739>>.
+    Found 1-bit register for signal <register_31<738>>.
+    Found 1-bit register for signal <register_31<737>>.
+    Found 1-bit register for signal <register_31<736>>.
+    Found 1-bit register for signal <register_31<735>>.
+    Found 1-bit register for signal <register_31<734>>.
+    Found 1-bit register for signal <register_31<733>>.
+    Found 1-bit register for signal <register_31<732>>.
+    Found 1-bit register for signal <register_31<731>>.
+    Found 1-bit register for signal <register_31<730>>.
+    Found 1-bit register for signal <register_31<729>>.
+    Found 1-bit register for signal <register_31<728>>.
+    Found 1-bit register for signal <register_31<727>>.
+    Found 1-bit register for signal <register_31<726>>.
+    Found 1-bit register for signal <register_31<725>>.
+    Found 1-bit register for signal <register_31<724>>.
+    Found 1-bit register for signal <register_31<723>>.
+    Found 1-bit register for signal <register_31<722>>.
+    Found 1-bit register for signal <register_31<721>>.
+    Found 1-bit register for signal <register_31<720>>.
+    Found 1-bit register for signal <register_31<719>>.
+    Found 1-bit register for signal <register_31<718>>.
+    Found 1-bit register for signal <register_31<717>>.
+    Found 1-bit register for signal <register_31<716>>.
+    Found 1-bit register for signal <register_31<715>>.
+    Found 1-bit register for signal <register_31<714>>.
+    Found 1-bit register for signal <register_31<713>>.
+    Found 1-bit register for signal <register_31<712>>.
+    Found 1-bit register for signal <register_31<711>>.
+    Found 1-bit register for signal <register_31<710>>.
+    Found 1-bit register for signal <register_31<709>>.
+    Found 1-bit register for signal <register_31<708>>.
+    Found 1-bit register for signal <register_31<707>>.
+    Found 1-bit register for signal <register_31<706>>.
+    Found 1-bit register for signal <register_31<705>>.
+    Found 1-bit register for signal <register_31<704>>.
+    Found 1-bit register for signal <register_31<703>>.
+    Found 1-bit register for signal <register_31<702>>.
+    Found 1-bit register for signal <register_31<701>>.
+    Found 1-bit register for signal <register_31<700>>.
+    Found 1-bit register for signal <register_31<699>>.
+    Found 1-bit register for signal <register_31<698>>.
+    Found 1-bit register for signal <register_31<697>>.
+    Found 1-bit register for signal <register_31<696>>.
+    Found 1-bit register for signal <register_31<695>>.
+    Found 1-bit register for signal <register_31<694>>.
+    Found 1-bit register for signal <register_31<693>>.
+    Found 1-bit register for signal <register_31<692>>.
+    Found 1-bit register for signal <register_31<691>>.
+    Found 1-bit register for signal <register_31<690>>.
+    Found 1-bit register for signal <register_31<689>>.
+    Found 1-bit register for signal <register_31<688>>.
+    Found 1-bit register for signal <register_31<687>>.
+    Found 1-bit register for signal <register_31<686>>.
+    Found 1-bit register for signal <register_31<685>>.
+    Found 1-bit register for signal <register_31<684>>.
+    Found 1-bit register for signal <register_31<683>>.
+    Found 1-bit register for signal <register_31<682>>.
+    Found 1-bit register for signal <register_31<681>>.
+    Found 1-bit register for signal <register_31<680>>.
+    Found 1-bit register for signal <register_31<679>>.
+    Found 1-bit register for signal <register_31<678>>.
+    Found 1-bit register for signal <register_31<677>>.
+    Found 1-bit register for signal <register_31<676>>.
+    Found 1-bit register for signal <register_31<675>>.
+    Found 1-bit register for signal <register_31<674>>.
+    Found 1-bit register for signal <register_31<673>>.
+    Found 1-bit register for signal <register_31<672>>.
+    Found 1-bit register for signal <register_31<671>>.
+    Found 1-bit register for signal <register_31<670>>.
+    Found 1-bit register for signal <register_31<669>>.
+    Found 1-bit register for signal <register_31<668>>.
+    Found 1-bit register for signal <register_31<667>>.
+    Found 1-bit register for signal <register_31<666>>.
+    Found 1-bit register for signal <register_31<665>>.
+    Found 1-bit register for signal <register_31<664>>.
+    Found 1-bit register for signal <register_31<663>>.
+    Found 1-bit register for signal <register_31<662>>.
+    Found 1-bit register for signal <register_31<661>>.
+    Found 1-bit register for signal <register_31<660>>.
+    Found 1-bit register for signal <register_31<659>>.
+    Found 1-bit register for signal <register_31<658>>.
+    Found 1-bit register for signal <register_31<657>>.
+    Found 1-bit register for signal <register_31<656>>.
+    Found 1-bit register for signal <register_31<655>>.
+    Found 1-bit register for signal <register_31<654>>.
+    Found 1-bit register for signal <register_31<653>>.
+    Found 1-bit register for signal <register_31<652>>.
+    Found 1-bit register for signal <register_31<651>>.
+    Found 1-bit register for signal <register_31<650>>.
+    Found 1-bit register for signal <register_31<649>>.
+    Found 1-bit register for signal <register_31<648>>.
+    Found 1-bit register for signal <register_31<647>>.
+    Found 1-bit register for signal <register_31<646>>.
+    Found 1-bit register for signal <register_31<645>>.
+    Found 1-bit register for signal <register_31<644>>.
+    Found 1-bit register for signal <register_31<643>>.
+    Found 1-bit register for signal <register_31<642>>.
+    Found 1-bit register for signal <register_31<641>>.
+    Found 1-bit register for signal <register_31<640>>.
+    Found 1-bit register for signal <register_31<639>>.
+    Found 1-bit register for signal <register_31<638>>.
+    Found 1-bit register for signal <register_31<637>>.
+    Found 1-bit register for signal <register_31<636>>.
+    Found 1-bit register for signal <register_31<635>>.
+    Found 1-bit register for signal <register_31<634>>.
+    Found 1-bit register for signal <register_31<633>>.
+    Found 1-bit register for signal <register_31<632>>.
+    Found 1-bit register for signal <register_31<631>>.
+    Found 1-bit register for signal <register_31<630>>.
+    Found 1-bit register for signal <register_31<629>>.
+    Found 1-bit register for signal <register_31<628>>.
+    Found 1-bit register for signal <register_31<627>>.
+    Found 1-bit register for signal <register_31<626>>.
+    Found 1-bit register for signal <register_31<625>>.
+    Found 1-bit register for signal <register_31<624>>.
+    Found 1-bit register for signal <register_31<623>>.
+    Found 1-bit register for signal <register_31<622>>.
+    Found 1-bit register for signal <register_31<621>>.
+    Found 1-bit register for signal <register_31<620>>.
+    Found 1-bit register for signal <register_31<619>>.
+    Found 1-bit register for signal <register_31<618>>.
+    Found 1-bit register for signal <register_31<617>>.
+    Found 1-bit register for signal <register_31<616>>.
+    Found 1-bit register for signal <register_31<615>>.
+    Found 1-bit register for signal <register_31<614>>.
+    Found 1-bit register for signal <register_31<613>>.
+    Found 1-bit register for signal <register_31<612>>.
+    Found 1-bit register for signal <register_31<611>>.
+    Found 1-bit register for signal <register_31<610>>.
+    Found 1-bit register for signal <register_31<609>>.
+    Found 1-bit register for signal <register_31<608>>.
+    Found 1-bit register for signal <register_31<607>>.
+    Found 1-bit register for signal <register_31<606>>.
+    Found 1-bit register for signal <register_31<605>>.
+    Found 1-bit register for signal <register_31<604>>.
+    Found 1-bit register for signal <register_31<603>>.
+    Found 1-bit register for signal <register_31<602>>.
+    Found 1-bit register for signal <register_31<601>>.
+    Found 1-bit register for signal <register_31<600>>.
+    Found 1-bit register for signal <register_31<599>>.
+    Found 1-bit register for signal <register_31<598>>.
+    Found 1-bit register for signal <register_31<597>>.
+    Found 1-bit register for signal <register_31<596>>.
+    Found 1-bit register for signal <register_31<595>>.
+    Found 1-bit register for signal <register_31<594>>.
+    Found 1-bit register for signal <register_31<593>>.
+    Found 1-bit register for signal <register_31<592>>.
+    Found 1-bit register for signal <register_31<591>>.
+    Found 1-bit register for signal <register_31<590>>.
+    Found 1-bit register for signal <register_31<589>>.
+    Found 1-bit register for signal <register_31<588>>.
+    Found 1-bit register for signal <register_31<587>>.
+    Found 1-bit register for signal <register_31<586>>.
+    Found 1-bit register for signal <register_31<585>>.
+    Found 1-bit register for signal <register_31<584>>.
+    Found 1-bit register for signal <register_31<583>>.
+    Found 1-bit register for signal <register_31<582>>.
+    Found 1-bit register for signal <register_31<581>>.
+    Found 1-bit register for signal <register_31<580>>.
+    Found 1-bit register for signal <register_31<579>>.
+    Found 1-bit register for signal <register_31<578>>.
+    Found 1-bit register for signal <register_31<577>>.
+    Found 1-bit register for signal <register_31<576>>.
+    Found 1-bit register for signal <register_31<575>>.
+    Found 1-bit register for signal <register_31<574>>.
+    Found 1-bit register for signal <register_31<573>>.
+    Found 1-bit register for signal <register_31<572>>.
+    Found 1-bit register for signal <register_31<571>>.
+    Found 1-bit register for signal <register_31<570>>.
+    Found 1-bit register for signal <register_31<569>>.
+    Found 1-bit register for signal <register_31<568>>.
+    Found 1-bit register for signal <register_31<567>>.
+    Found 1-bit register for signal <register_31<566>>.
+    Found 1-bit register for signal <register_31<565>>.
+    Found 1-bit register for signal <register_31<564>>.
+    Found 1-bit register for signal <register_31<563>>.
+    Found 1-bit register for signal <register_31<562>>.
+    Found 1-bit register for signal <register_31<561>>.
+    Found 1-bit register for signal <register_31<560>>.
+    Found 1-bit register for signal <register_31<559>>.
+    Found 1-bit register for signal <register_31<558>>.
+    Found 1-bit register for signal <register_31<557>>.
+    Found 1-bit register for signal <register_31<556>>.
+    Found 1-bit register for signal <register_31<555>>.
+    Found 1-bit register for signal <register_31<554>>.
+    Found 1-bit register for signal <register_31<553>>.
+    Found 1-bit register for signal <register_31<552>>.
+    Found 1-bit register for signal <register_31<551>>.
+    Found 1-bit register for signal <register_31<550>>.
+    Found 1-bit register for signal <register_31<549>>.
+    Found 1-bit register for signal <register_31<548>>.
+    Found 1-bit register for signal <register_31<547>>.
+    Found 1-bit register for signal <register_31<546>>.
+    Found 1-bit register for signal <register_31<545>>.
+    Found 1-bit register for signal <register_31<544>>.
+    Found 1-bit register for signal <register_31<543>>.
+    Found 1-bit register for signal <register_31<542>>.
+    Found 1-bit register for signal <register_31<541>>.
+    Found 1-bit register for signal <register_31<540>>.
+    Found 1-bit register for signal <register_31<539>>.
+    Found 1-bit register for signal <register_31<538>>.
+    Found 1-bit register for signal <register_31<537>>.
+    Found 1-bit register for signal <register_31<536>>.
+    Found 1-bit register for signal <register_31<535>>.
+    Found 1-bit register for signal <register_31<534>>.
+    Found 1-bit register for signal <register_31<533>>.
+    Found 1-bit register for signal <register_31<532>>.
+    Found 1-bit register for signal <register_31<531>>.
+    Found 1-bit register for signal <register_31<530>>.
+    Found 1-bit register for signal <register_31<529>>.
+    Found 1-bit register for signal <register_31<528>>.
+    Found 1-bit register for signal <register_31<527>>.
+    Found 1-bit register for signal <register_31<526>>.
+    Found 1-bit register for signal <register_31<525>>.
+    Found 1-bit register for signal <register_31<524>>.
+    Found 1-bit register for signal <register_31<523>>.
+    Found 1-bit register for signal <register_31<522>>.
+    Found 1-bit register for signal <register_31<521>>.
+    Found 1-bit register for signal <register_31<520>>.
+    Found 1-bit register for signal <register_31<519>>.
+    Found 1-bit register for signal <register_31<518>>.
+    Found 1-bit register for signal <register_31<517>>.
+    Found 1-bit register for signal <register_31<516>>.
+    Found 1-bit register for signal <register_31<515>>.
+    Found 1-bit register for signal <register_31<514>>.
+    Found 1-bit register for signal <register_31<513>>.
+    Found 1-bit register for signal <register_31<512>>.
+    Found 1-bit register for signal <register_31<511>>.
+    Found 1-bit register for signal <register_31<510>>.
+    Found 1-bit register for signal <register_31<509>>.
+    Found 1-bit register for signal <register_31<508>>.
+    Found 1-bit register for signal <register_31<507>>.
+    Found 1-bit register for signal <register_31<506>>.
+    Found 1-bit register for signal <register_31<505>>.
+    Found 1-bit register for signal <register_31<504>>.
+    Found 1-bit register for signal <register_31<503>>.
+    Found 1-bit register for signal <register_31<502>>.
+    Found 1-bit register for signal <register_31<501>>.
+    Found 1-bit register for signal <register_31<500>>.
+    Found 1-bit register for signal <register_31<499>>.
+    Found 1-bit register for signal <register_31<498>>.
+    Found 1-bit register for signal <register_31<497>>.
+    Found 1-bit register for signal <register_31<496>>.
+    Found 1-bit register for signal <register_31<495>>.
+    Found 1-bit register for signal <register_31<494>>.
+    Found 1-bit register for signal <register_31<493>>.
+    Found 1-bit register for signal <register_31<492>>.
+    Found 1-bit register for signal <register_31<491>>.
+    Found 1-bit register for signal <register_31<490>>.
+    Found 1-bit register for signal <register_31<489>>.
+    Found 1-bit register for signal <register_31<488>>.
+    Found 1-bit register for signal <register_31<487>>.
+    Found 1-bit register for signal <register_31<486>>.
+    Found 1-bit register for signal <register_31<485>>.
+    Found 1-bit register for signal <register_31<484>>.
+    Found 1-bit register for signal <register_31<483>>.
+    Found 1-bit register for signal <register_31<482>>.
+    Found 1-bit register for signal <register_31<481>>.
+    Found 1-bit register for signal <register_31<480>>.
+    Found 1-bit register for signal <register_31<479>>.
+    Found 1-bit register for signal <register_31<478>>.
+    Found 1-bit register for signal <register_31<477>>.
+    Found 1-bit register for signal <register_31<476>>.
+    Found 1-bit register for signal <register_31<475>>.
+    Found 1-bit register for signal <register_31<474>>.
+    Found 1-bit register for signal <register_31<473>>.
+    Found 1-bit register for signal <register_31<472>>.
+    Found 1-bit register for signal <register_31<471>>.
+    Found 1-bit register for signal <register_31<470>>.
+    Found 1-bit register for signal <register_31<469>>.
+    Found 1-bit register for signal <register_31<468>>.
+    Found 1-bit register for signal <register_31<467>>.
+    Found 1-bit register for signal <register_31<466>>.
+    Found 1-bit register for signal <register_31<465>>.
+    Found 1-bit register for signal <register_31<464>>.
+    Found 1-bit register for signal <register_31<463>>.
+    Found 1-bit register for signal <register_31<462>>.
+    Found 1-bit register for signal <register_31<461>>.
+    Found 1-bit register for signal <register_31<460>>.
+    Found 1-bit register for signal <register_31<459>>.
+    Found 1-bit register for signal <register_31<458>>.
+    Found 1-bit register for signal <register_31<457>>.
+    Found 1-bit register for signal <register_31<456>>.
+    Found 1-bit register for signal <register_31<455>>.
+    Found 1-bit register for signal <register_31<454>>.
+    Found 1-bit register for signal <register_31<453>>.
+    Found 1-bit register for signal <register_31<452>>.
+    Found 1-bit register for signal <register_31<451>>.
+    Found 1-bit register for signal <register_31<450>>.
+    Found 1-bit register for signal <register_31<449>>.
+    Found 1-bit register for signal <register_31<448>>.
+    Found 1-bit register for signal <register_31<447>>.
+    Found 1-bit register for signal <register_31<446>>.
+    Found 1-bit register for signal <register_31<445>>.
+    Found 1-bit register for signal <register_31<444>>.
+    Found 1-bit register for signal <register_31<443>>.
+    Found 1-bit register for signal <register_31<442>>.
+    Found 1-bit register for signal <register_31<441>>.
+    Found 1-bit register for signal <register_31<440>>.
+    Found 1-bit register for signal <register_31<439>>.
+    Found 1-bit register for signal <register_31<438>>.
+    Found 1-bit register for signal <register_31<437>>.
+    Found 1-bit register for signal <register_31<436>>.
+    Found 1-bit register for signal <register_31<435>>.
+    Found 1-bit register for signal <register_31<434>>.
+    Found 1-bit register for signal <register_31<433>>.
+    Found 1-bit register for signal <register_31<432>>.
+    Found 1-bit register for signal <register_31<431>>.
+    Found 1-bit register for signal <register_31<430>>.
+    Found 1-bit register for signal <register_31<429>>.
+    Found 1-bit register for signal <register_31<428>>.
+    Found 1-bit register for signal <register_31<427>>.
+    Found 1-bit register for signal <register_31<426>>.
+    Found 1-bit register for signal <register_31<425>>.
+    Found 1-bit register for signal <register_31<424>>.
+    Found 1-bit register for signal <register_31<423>>.
+    Found 1-bit register for signal <register_31<422>>.
+    Found 1-bit register for signal <register_31<421>>.
+    Found 1-bit register for signal <register_31<420>>.
+    Found 1-bit register for signal <register_31<419>>.
+    Found 1-bit register for signal <register_31<418>>.
+    Found 1-bit register for signal <register_31<417>>.
+    Found 1-bit register for signal <register_31<416>>.
+    Found 1-bit register for signal <register_31<415>>.
+    Found 1-bit register for signal <register_31<414>>.
+    Found 1-bit register for signal <register_31<413>>.
+    Found 1-bit register for signal <register_31<412>>.
+    Found 1-bit register for signal <register_31<411>>.
+    Found 1-bit register for signal <register_31<410>>.
+    Found 1-bit register for signal <register_31<409>>.
+    Found 1-bit register for signal <register_31<408>>.
+    Found 1-bit register for signal <register_31<407>>.
+    Found 1-bit register for signal <register_31<406>>.
+    Found 1-bit register for signal <register_31<405>>.
+    Found 1-bit register for signal <register_31<404>>.
+    Found 1-bit register for signal <register_31<403>>.
+    Found 1-bit register for signal <register_31<402>>.
+    Found 1-bit register for signal <register_31<401>>.
+    Found 1-bit register for signal <register_31<400>>.
+    Found 1-bit register for signal <register_31<399>>.
+    Found 1-bit register for signal <register_31<398>>.
+    Found 1-bit register for signal <register_31<397>>.
+    Found 1-bit register for signal <register_31<396>>.
+    Found 1-bit register for signal <register_31<395>>.
+    Found 1-bit register for signal <register_31<394>>.
+    Found 1-bit register for signal <register_31<393>>.
+    Found 1-bit register for signal <register_31<392>>.
+    Found 1-bit register for signal <register_31<391>>.
+    Found 1-bit register for signal <register_31<390>>.
+    Found 1-bit register for signal <register_31<389>>.
+    Found 1-bit register for signal <register_31<388>>.
+    Found 1-bit register for signal <register_31<387>>.
+    Found 1-bit register for signal <register_31<386>>.
+    Found 1-bit register for signal <register_31<385>>.
+    Found 1-bit register for signal <register_31<384>>.
+    Found 1-bit register for signal <register_31<383>>.
+    Found 1-bit register for signal <register_31<382>>.
+    Found 1-bit register for signal <register_31<381>>.
+    Found 1-bit register for signal <register_31<380>>.
+    Found 1-bit register for signal <register_31<379>>.
+    Found 1-bit register for signal <register_31<378>>.
+    Found 1-bit register for signal <register_31<377>>.
+    Found 1-bit register for signal <register_31<376>>.
+    Found 1-bit register for signal <register_31<375>>.
+    Found 1-bit register for signal <register_31<374>>.
+    Found 1-bit register for signal <register_31<373>>.
+    Found 1-bit register for signal <register_31<372>>.
+    Found 1-bit register for signal <register_31<371>>.
+    Found 1-bit register for signal <register_31<370>>.
+    Found 1-bit register for signal <register_31<369>>.
+    Found 1-bit register for signal <register_31<368>>.
+    Found 1-bit register for signal <register_31<367>>.
+    Found 1-bit register for signal <register_31<366>>.
+    Found 1-bit register for signal <register_31<365>>.
+    Found 1-bit register for signal <register_31<364>>.
+    Found 1-bit register for signal <register_31<363>>.
+    Found 1-bit register for signal <register_31<362>>.
+    Found 1-bit register for signal <register_31<361>>.
+    Found 1-bit register for signal <register_31<360>>.
+    Found 1-bit register for signal <register_31<359>>.
+    Found 1-bit register for signal <register_31<358>>.
+    Found 1-bit register for signal <register_31<357>>.
+    Found 1-bit register for signal <register_31<356>>.
+    Found 1-bit register for signal <register_31<355>>.
+    Found 1-bit register for signal <register_31<354>>.
+    Found 1-bit register for signal <register_31<353>>.
+    Found 1-bit register for signal <register_31<352>>.
+    Found 1-bit register for signal <register_31<351>>.
+    Found 1-bit register for signal <register_31<350>>.
+    Found 1-bit register for signal <register_31<349>>.
+    Found 1-bit register for signal <register_31<348>>.
+    Found 1-bit register for signal <register_31<347>>.
+    Found 1-bit register for signal <register_31<346>>.
+    Found 1-bit register for signal <register_31<345>>.
+    Found 1-bit register for signal <register_31<344>>.
+    Found 1-bit register for signal <register_31<343>>.
+    Found 1-bit register for signal <register_31<342>>.
+    Found 1-bit register for signal <register_31<341>>.
+    Found 1-bit register for signal <register_31<340>>.
+    Found 1-bit register for signal <register_31<339>>.
+    Found 1-bit register for signal <register_31<338>>.
+    Found 1-bit register for signal <register_31<337>>.
+    Found 1-bit register for signal <register_31<336>>.
+    Found 1-bit register for signal <register_31<335>>.
+    Found 1-bit register for signal <register_31<334>>.
+    Found 1-bit register for signal <register_31<333>>.
+    Found 1-bit register for signal <register_31<332>>.
+    Found 1-bit register for signal <register_31<331>>.
+    Found 1-bit register for signal <register_31<330>>.
+    Found 1-bit register for signal <register_31<329>>.
+    Found 1-bit register for signal <register_31<328>>.
+    Found 1-bit register for signal <register_31<327>>.
+    Found 1-bit register for signal <register_31<326>>.
+    Found 1-bit register for signal <register_31<325>>.
+    Found 1-bit register for signal <register_31<324>>.
+    Found 1-bit register for signal <register_31<323>>.
+    Found 1-bit register for signal <register_31<322>>.
+    Found 1-bit register for signal <register_31<321>>.
+    Found 1-bit register for signal <register_31<320>>.
+    Found 1-bit register for signal <register_31<319>>.
+    Found 1-bit register for signal <register_31<318>>.
+    Found 1-bit register for signal <register_31<317>>.
+    Found 1-bit register for signal <register_31<316>>.
+    Found 1-bit register for signal <register_31<315>>.
+    Found 1-bit register for signal <register_31<314>>.
+    Found 1-bit register for signal <register_31<313>>.
+    Found 1-bit register for signal <register_31<312>>.
+    Found 1-bit register for signal <register_31<311>>.
+    Found 1-bit register for signal <register_31<310>>.
+    Found 1-bit register for signal <register_31<309>>.
+    Found 1-bit register for signal <register_31<308>>.
+    Found 1-bit register for signal <register_31<307>>.
+    Found 1-bit register for signal <register_31<306>>.
+    Found 1-bit register for signal <register_31<305>>.
+    Found 1-bit register for signal <register_31<304>>.
+    Found 1-bit register for signal <register_31<303>>.
+    Found 1-bit register for signal <register_31<302>>.
+    Found 1-bit register for signal <register_31<301>>.
+    Found 1-bit register for signal <register_31<300>>.
+    Found 1-bit register for signal <register_31<299>>.
+    Found 1-bit register for signal <register_31<298>>.
+    Found 1-bit register for signal <register_31<297>>.
+    Found 1-bit register for signal <register_31<296>>.
+    Found 1-bit register for signal <register_31<295>>.
+    Found 1-bit register for signal <register_31<294>>.
+    Found 1-bit register for signal <register_31<293>>.
+    Found 1-bit register for signal <register_31<292>>.
+    Found 1-bit register for signal <register_31<291>>.
+    Found 1-bit register for signal <register_31<290>>.
+    Found 1-bit register for signal <register_31<289>>.
+    Found 1-bit register for signal <register_31<288>>.
+    Found 1-bit register for signal <register_31<287>>.
+    Found 1-bit register for signal <register_31<286>>.
+    Found 1-bit register for signal <register_31<285>>.
+    Found 1-bit register for signal <register_31<284>>.
+    Found 1-bit register for signal <register_31<283>>.
+    Found 1-bit register for signal <register_31<282>>.
+    Found 1-bit register for signal <register_31<281>>.
+    Found 1-bit register for signal <register_31<280>>.
+    Found 1-bit register for signal <register_31<279>>.
+    Found 1-bit register for signal <register_31<278>>.
+    Found 1-bit register for signal <register_31<277>>.
+    Found 1-bit register for signal <register_31<276>>.
+    Found 1-bit register for signal <register_31<275>>.
+    Found 1-bit register for signal <register_31<274>>.
+    Found 1-bit register for signal <register_31<273>>.
+    Found 1-bit register for signal <register_31<272>>.
+    Found 1-bit register for signal <register_31<271>>.
+    Found 1-bit register for signal <register_31<270>>.
+    Found 1-bit register for signal <register_31<269>>.
+    Found 1-bit register for signal <register_31<268>>.
+    Found 1-bit register for signal <register_31<267>>.
+    Found 1-bit register for signal <register_31<266>>.
+    Found 1-bit register for signal <register_31<265>>.
+    Found 1-bit register for signal <register_31<264>>.
+    Found 1-bit register for signal <register_31<263>>.
+    Found 1-bit register for signal <register_31<262>>.
+    Found 1-bit register for signal <register_31<261>>.
+    Found 1-bit register for signal <register_31<260>>.
+    Found 1-bit register for signal <register_31<259>>.
+    Found 1-bit register for signal <register_31<258>>.
+    Found 1-bit register for signal <register_31<257>>.
+    Found 1-bit register for signal <register_31<256>>.
+    Found 1-bit register for signal <register_31<255>>.
+    Found 1-bit register for signal <register_31<254>>.
+    Found 1-bit register for signal <register_31<253>>.
+    Found 1-bit register for signal <register_31<252>>.
+    Found 1-bit register for signal <register_31<251>>.
+    Found 1-bit register for signal <register_31<250>>.
+    Found 1-bit register for signal <register_31<249>>.
+    Found 1-bit register for signal <register_31<248>>.
+    Found 1-bit register for signal <register_31<247>>.
+    Found 1-bit register for signal <register_31<246>>.
+    Found 1-bit register for signal <register_31<245>>.
+    Found 1-bit register for signal <register_31<244>>.
+    Found 1-bit register for signal <register_31<243>>.
+    Found 1-bit register for signal <register_31<242>>.
+    Found 1-bit register for signal <register_31<241>>.
+    Found 1-bit register for signal <register_31<240>>.
+    Found 1-bit register for signal <register_31<239>>.
+    Found 1-bit register for signal <register_31<238>>.
+    Found 1-bit register for signal <register_31<237>>.
+    Found 1-bit register for signal <register_31<236>>.
+    Found 1-bit register for signal <register_31<235>>.
+    Found 1-bit register for signal <register_31<234>>.
+    Found 1-bit register for signal <register_31<233>>.
+    Found 1-bit register for signal <register_31<232>>.
+    Found 1-bit register for signal <register_31<231>>.
+    Found 1-bit register for signal <register_31<230>>.
+    Found 1-bit register for signal <register_31<229>>.
+    Found 1-bit register for signal <register_31<228>>.
+    Found 1-bit register for signal <register_31<227>>.
+    Found 1-bit register for signal <register_31<226>>.
+    Found 1-bit register for signal <register_31<225>>.
+    Found 1-bit register for signal <register_31<224>>.
+    Found 1-bit register for signal <register_31<223>>.
+    Found 1-bit register for signal <register_31<222>>.
+    Found 1-bit register for signal <register_31<221>>.
+    Found 1-bit register for signal <register_31<220>>.
+    Found 1-bit register for signal <register_31<219>>.
+    Found 1-bit register for signal <register_31<218>>.
+    Found 1-bit register for signal <register_31<217>>.
+    Found 1-bit register for signal <register_31<216>>.
+    Found 1-bit register for signal <register_31<215>>.
+    Found 1-bit register for signal <register_31<214>>.
+    Found 1-bit register for signal <register_31<213>>.
+    Found 1-bit register for signal <register_31<212>>.
+    Found 1-bit register for signal <register_31<211>>.
+    Found 1-bit register for signal <register_31<210>>.
+    Found 1-bit register for signal <register_31<209>>.
+    Found 1-bit register for signal <register_31<208>>.
+    Found 1-bit register for signal <register_31<207>>.
+    Found 1-bit register for signal <register_31<206>>.
+    Found 1-bit register for signal <register_31<205>>.
+    Found 1-bit register for signal <register_31<204>>.
+    Found 1-bit register for signal <register_31<203>>.
+    Found 1-bit register for signal <register_31<202>>.
+    Found 1-bit register for signal <register_31<201>>.
+    Found 1-bit register for signal <register_31<200>>.
+    Found 1-bit register for signal <register_31<199>>.
+    Found 1-bit register for signal <register_31<198>>.
+    Found 1-bit register for signal <register_31<197>>.
+    Found 1-bit register for signal <register_31<196>>.
+    Found 1-bit register for signal <register_31<195>>.
+    Found 1-bit register for signal <register_31<194>>.
+    Found 1-bit register for signal <register_31<193>>.
+    Found 1-bit register for signal <register_31<192>>.
+    Found 1-bit register for signal <register_31<191>>.
+    Found 1-bit register for signal <register_31<190>>.
+    Found 1-bit register for signal <register_31<189>>.
+    Found 1-bit register for signal <register_31<188>>.
+    Found 1-bit register for signal <register_31<187>>.
+    Found 1-bit register for signal <register_31<186>>.
+    Found 1-bit register for signal <register_31<185>>.
+    Found 1-bit register for signal <register_31<184>>.
+    Found 1-bit register for signal <register_31<183>>.
+    Found 1-bit register for signal <register_31<182>>.
+    Found 1-bit register for signal <register_31<181>>.
+    Found 1-bit register for signal <register_31<180>>.
+    Found 1-bit register for signal <register_31<179>>.
+    Found 1-bit register for signal <register_31<178>>.
+    Found 1-bit register for signal <register_31<177>>.
+    Found 1-bit register for signal <register_31<176>>.
+    Found 1-bit register for signal <register_31<175>>.
+    Found 1-bit register for signal <register_31<174>>.
+    Found 1-bit register for signal <register_31<173>>.
+    Found 1-bit register for signal <register_31<172>>.
+    Found 1-bit register for signal <register_31<171>>.
+    Found 1-bit register for signal <register_31<170>>.
+    Found 1-bit register for signal <register_31<169>>.
+    Found 1-bit register for signal <register_31<168>>.
+    Found 1-bit register for signal <register_31<167>>.
+    Found 1-bit register for signal <register_31<166>>.
+    Found 1-bit register for signal <register_31<165>>.
+    Found 1-bit register for signal <register_31<164>>.
+    Found 1-bit register for signal <register_31<163>>.
+    Found 1-bit register for signal <register_31<162>>.
+    Found 1-bit register for signal <register_31<161>>.
+    Found 1-bit register for signal <register_31<160>>.
+    Found 1-bit register for signal <register_31<159>>.
+    Found 1-bit register for signal <register_31<158>>.
+    Found 1-bit register for signal <register_31<157>>.
+    Found 1-bit register for signal <register_31<156>>.
+    Found 1-bit register for signal <register_31<155>>.
+    Found 1-bit register for signal <register_31<154>>.
+    Found 1-bit register for signal <register_31<153>>.
+    Found 1-bit register for signal <register_31<152>>.
+    Found 1-bit register for signal <register_31<151>>.
+    Found 1-bit register for signal <register_31<150>>.
+    Found 1-bit register for signal <register_31<149>>.
+    Found 1-bit register for signal <register_31<148>>.
+    Found 1-bit register for signal <register_31<147>>.
+    Found 1-bit register for signal <register_31<146>>.
+    Found 1-bit register for signal <register_31<145>>.
+    Found 1-bit register for signal <register_31<144>>.
+    Found 1-bit register for signal <register_31<143>>.
+    Found 1-bit register for signal <register_31<142>>.
+    Found 1-bit register for signal <register_31<141>>.
+    Found 1-bit register for signal <register_31<140>>.
+    Found 1-bit register for signal <register_31<139>>.
+    Found 1-bit register for signal <register_31<138>>.
+    Found 1-bit register for signal <register_31<137>>.
+    Found 1-bit register for signal <register_31<136>>.
+    Found 1-bit register for signal <register_31<135>>.
+    Found 1-bit register for signal <register_31<134>>.
+    Found 1-bit register for signal <register_31<133>>.
+    Found 1-bit register for signal <register_31<132>>.
+    Found 1-bit register for signal <register_31<131>>.
+    Found 1-bit register for signal <register_31<130>>.
+    Found 1-bit register for signal <register_31<129>>.
+    Found 1-bit register for signal <register_31<128>>.
+    Found 1-bit register for signal <register_31<127>>.
+    Found 1-bit register for signal <register_31<126>>.
+    Found 1-bit register for signal <register_31<125>>.
+    Found 1-bit register for signal <register_31<124>>.
+    Found 1-bit register for signal <register_31<123>>.
+    Found 1-bit register for signal <register_31<122>>.
+    Found 1-bit register for signal <register_31<121>>.
+    Found 1-bit register for signal <register_31<120>>.
+    Found 1-bit register for signal <register_31<119>>.
+    Found 1-bit register for signal <register_31<118>>.
+    Found 1-bit register for signal <register_31<117>>.
+    Found 1-bit register for signal <register_31<116>>.
+    Found 1-bit register for signal <register_31<115>>.
+    Found 1-bit register for signal <register_31<114>>.
+    Found 1-bit register for signal <register_31<113>>.
+    Found 1-bit register for signal <register_31<112>>.
+    Found 1-bit register for signal <register_31<111>>.
+    Found 1-bit register for signal <register_31<110>>.
+    Found 1-bit register for signal <register_31<109>>.
+    Found 1-bit register for signal <register_31<108>>.
+    Found 1-bit register for signal <register_31<107>>.
+    Found 1-bit register for signal <register_31<106>>.
+    Found 1-bit register for signal <register_31<105>>.
+    Found 1-bit register for signal <register_31<104>>.
+    Found 1-bit register for signal <register_31<103>>.
+    Found 1-bit register for signal <register_31<102>>.
+    Found 1-bit register for signal <register_31<101>>.
+    Found 1-bit register for signal <register_31<100>>.
+    Found 1-bit register for signal <register_31<99>>.
+    Found 1-bit register for signal <register_31<98>>.
+    Found 1-bit register for signal <register_31<97>>.
+    Found 1-bit register for signal <register_31<96>>.
+    Found 1-bit register for signal <register_31<95>>.
+    Found 1-bit register for signal <register_31<94>>.
+    Found 1-bit register for signal <register_31<93>>.
+    Found 1-bit register for signal <register_31<92>>.
+    Found 1-bit register for signal <register_31<91>>.
+    Found 1-bit register for signal <register_31<90>>.
+    Found 1-bit register for signal <register_31<89>>.
+    Found 1-bit register for signal <register_31<88>>.
+    Found 1-bit register for signal <register_31<87>>.
+    Found 1-bit register for signal <register_31<86>>.
+    Found 1-bit register for signal <register_31<85>>.
+    Found 1-bit register for signal <register_31<84>>.
+    Found 1-bit register for signal <register_31<83>>.
+    Found 1-bit register for signal <register_31<82>>.
+    Found 1-bit register for signal <register_31<81>>.
+    Found 1-bit register for signal <register_31<80>>.
+    Found 1-bit register for signal <register_31<79>>.
+    Found 1-bit register for signal <register_31<78>>.
+    Found 1-bit register for signal <register_31<77>>.
+    Found 1-bit register for signal <register_31<76>>.
+    Found 1-bit register for signal <register_31<75>>.
+    Found 1-bit register for signal <register_31<74>>.
+    Found 1-bit register for signal <register_31<73>>.
+    Found 1-bit register for signal <register_31<72>>.
+    Found 1-bit register for signal <register_31<71>>.
+    Found 1-bit register for signal <register_31<70>>.
+    Found 1-bit register for signal <register_31<69>>.
+    Found 1-bit register for signal <register_31<68>>.
+    Found 1-bit register for signal <register_31<67>>.
+    Found 1-bit register for signal <register_31<66>>.
+    Found 1-bit register for signal <register_31<65>>.
+    Found 1-bit register for signal <register_31<64>>.
+    Found 1-bit register for signal <register_31<63>>.
+    Found 1-bit register for signal <register_31<62>>.
+    Found 1-bit register for signal <register_31<61>>.
+    Found 1-bit register for signal <register_31<60>>.
+    Found 1-bit register for signal <register_31<59>>.
+    Found 1-bit register for signal <register_31<58>>.
+    Found 1-bit register for signal <register_31<57>>.
+    Found 1-bit register for signal <register_31<56>>.
+    Found 1-bit register for signal <register_31<55>>.
+    Found 1-bit register for signal <register_31<54>>.
+    Found 1-bit register for signal <register_31<53>>.
+    Found 1-bit register for signal <register_31<52>>.
+    Found 1-bit register for signal <register_31<51>>.
+    Found 1-bit register for signal <register_31<50>>.
+    Found 1-bit register for signal <register_31<49>>.
+    Found 1-bit register for signal <register_31<48>>.
+    Found 1-bit register for signal <register_31<47>>.
+    Found 1-bit register for signal <register_31<46>>.
+    Found 1-bit register for signal <register_31<45>>.
+    Found 1-bit register for signal <register_31<44>>.
+    Found 1-bit register for signal <register_31<43>>.
+    Found 1-bit register for signal <register_31<42>>.
+    Found 1-bit register for signal <register_31<41>>.
+    Found 1-bit register for signal <register_31<40>>.
+    Found 1-bit register for signal <register_31<39>>.
+    Found 1-bit register for signal <register_31<38>>.
+    Found 1-bit register for signal <register_31<37>>.
+    Found 1-bit register for signal <register_31<36>>.
+    Found 1-bit register for signal <register_31<35>>.
+    Found 1-bit register for signal <register_31<34>>.
+    Found 1-bit register for signal <register_31<33>>.
+    Found 1-bit register for signal <register_31<32>>.
+    Found 1-bit register for signal <register_31<31>>.
+    Found 1-bit register for signal <register_31<30>>.
+    Found 1-bit register for signal <register_31<29>>.
+    Found 1-bit register for signal <register_31<28>>.
+    Found 1-bit register for signal <register_31<27>>.
+    Found 1-bit register for signal <register_31<26>>.
+    Found 1-bit register for signal <register_31<25>>.
+    Found 1-bit register for signal <register_31<24>>.
+    Found 1-bit register for signal <register_31<23>>.
+    Found 1-bit register for signal <register_31<22>>.
+    Found 1-bit register for signal <register_31<21>>.
+    Found 1-bit register for signal <register_31<20>>.
+    Found 1-bit register for signal <register_31<19>>.
+    Found 1-bit register for signal <register_31<18>>.
+    Found 1-bit register for signal <register_31<17>>.
+    Found 1-bit register for signal <register_31<16>>.
+    Found 1-bit register for signal <register_31<15>>.
+    Found 1-bit register for signal <register_31<14>>.
+    Found 1-bit register for signal <register_31<13>>.
+    Found 1-bit register for signal <register_31<12>>.
+    Found 1-bit register for signal <register_31<11>>.
+    Found 1-bit register for signal <register_31<10>>.
+    Found 1-bit register for signal <register_31<9>>.
+    Found 1-bit register for signal <register_31<8>>.
+    Found 1-bit register for signal <register_31<7>>.
+    Found 1-bit register for signal <register_31<6>>.
+    Found 1-bit register for signal <register_31<5>>.
+    Found 1-bit register for signal <register_31<4>>.
+    Found 1-bit register for signal <register_31<3>>.
+    Found 1-bit register for signal <register_31<2>>.
+    Found 1-bit register for signal <register_31<1>>.
+    Found 1-bit register for signal <register_31<0>>.
+    Found 32-bit 32-to-1 multiplexer for signal <GND_1_o_X_1_o_wide_mux_35_OUT> created at line 48.
+    Found 32-bit 32-to-1 multiplexer for signal <GND_1_o_X_1_o_wide_mux_33_OUT> created at line 41.
+    Found 32-bit 32-to-1 multiplexer for signal <GND_1_o_X_1_o_wide_mux_36_OUT> created at line 50.
+    Found 32-bit 32-to-1 multiplexer for signal <GND_1_o_X_1_o_wide_mux_34_OUT> created at line 43.
+    Summary:
+	inferred 1088 D-type flip-flop(s).
+	inferred  38 Multiplexer(s).
+Unit <REG_FILE> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1026
+ 1-bit register                                        : 1024
+ 32-bit register                                       : 2
+# Multiplexers                                         : 38
+ 32-bit 2-to-1 multiplexer                             : 34
+ 32-bit 32-to-1 multiplexer                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1088
+ Flip-Flops                                            : 1088
+# Multiplexers                                         : 38
+ 32-bit 2-to-1 multiplexer                             : 34
+ 32-bit 32-to-1 multiplexer                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    register_31_960 in unit <REG_FILE>
+    register_31_961 in unit <REG_FILE>
+    register_31_962 in unit <REG_FILE>
+    register_31_963 in unit <REG_FILE>
+    register_31_964 in unit <REG_FILE>
+    register_31_965 in unit <REG_FILE>
+    register_31_966 in unit <REG_FILE>
+    register_31_967 in unit <REG_FILE>
+    register_31_968 in unit <REG_FILE>
+    register_31_969 in unit <REG_FILE>
+    register_31_970 in unit <REG_FILE>
+    register_31_971 in unit <REG_FILE>
+    register_31_972 in unit <REG_FILE>
+    register_31_973 in unit <REG_FILE>
+    register_31_974 in unit <REG_FILE>
+    register_31_975 in unit <REG_FILE>
+    register_31_976 in unit <REG_FILE>
+    register_31_977 in unit <REG_FILE>
+    register_31_978 in unit <REG_FILE>
+    register_31_979 in unit <REG_FILE>
+    register_31_980 in unit <REG_FILE>
+    register_31_981 in unit <REG_FILE>
+    register_31_982 in unit <REG_FILE>
+    register_31_983 in unit <REG_FILE>
+    register_31_984 in unit <REG_FILE>
+    register_31_985 in unit <REG_FILE>
+    register_31_987 in unit <REG_FILE>
+    register_31_988 in unit <REG_FILE>
+    register_31_986 in unit <REG_FILE>
+    register_31_989 in unit <REG_FILE>
+    register_31_990 in unit <REG_FILE>
+    register_31_991 in unit <REG_FILE>
+    register_31_992 in unit <REG_FILE>
+    register_31_993 in unit <REG_FILE>
+    register_31_994 in unit <REG_FILE>
+    register_31_995 in unit <REG_FILE>
+    register_31_996 in unit <REG_FILE>
+    register_31_997 in unit <REG_FILE>
+    register_31_998 in unit <REG_FILE>
+    register_31_999 in unit <REG_FILE>
+    register_31_1000 in unit <REG_FILE>
+    register_31_1001 in unit <REG_FILE>
+    register_31_1002 in unit <REG_FILE>
+    register_31_1003 in unit <REG_FILE>
+    register_31_1004 in unit <REG_FILE>
+    register_31_1005 in unit <REG_FILE>
+    register_31_1006 in unit <REG_FILE>
+    register_31_1007 in unit <REG_FILE>
+    register_31_1008 in unit <REG_FILE>
+    register_31_1009 in unit <REG_FILE>
+    register_31_1010 in unit <REG_FILE>
+    register_31_1011 in unit <REG_FILE>
+    register_31_1012 in unit <REG_FILE>
+    register_31_1013 in unit <REG_FILE>
+    register_31_1014 in unit <REG_FILE>
+    register_31_1015 in unit <REG_FILE>
+    register_31_1016 in unit <REG_FILE>
+    register_31_1017 in unit <REG_FILE>
+    register_31_1018 in unit <REG_FILE>
+    register_31_1020 in unit <REG_FILE>
+    register_31_1021 in unit <REG_FILE>
+    register_31_1019 in unit <REG_FILE>
+    register_31_1022 in unit <REG_FILE>
+    register_31_1023 in unit <REG_FILE>
+
+
+Optimizing unit <REG_FILE> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block REG_FILE, actual ratio is 45.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1152
+ Flip-Flops                                            : 1152
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : REG_FILE.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3682
+#      INV                         : 1
+#      LUT2                        : 128
+#      LUT3                        : 64
+#      LUT4                        : 960
+#      LUT5                        : 224
+#      LUT6                        : 1792
+#      MUXF7                       : 512
+#      VCC                         : 1
+# FlipFlops/Latches                : 1216
+#      FDC                         : 1024
+#      FDE                         : 64
+#      FDP                         : 64
+#      LDC                         : 64
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 177
+#      IBUF                        : 113
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1216  out of  18224     6%  
+ Number of Slice LUTs:                 3169  out of   9112    34%  
+    Number used as Logic:              3169  out of   9112    34%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3297
+   Number with an unused Flip Flop:    2081  out of   3297    63%  
+   Number with an unused LUT:           128  out of   3297     3%  
+   Number of fully used LUT-FF pairs:  1088  out of   3297    32%  
+   Number of unique control sets:       194
+
+IO Utilization: 
+ Number of IOs:                         178
+ Number of bonded IOBs:                 178  out of    232    76%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------+------------------------------+-------+
+Clock Signal                                             | Clock buffer(FF name)        | Load  |
+---------------------------------------------------------+------------------------------+-------+
+clk                                                      | BUFGP                        | 1152  |
+rst_n_comt_1[31]_AND_127_o(rst_n_comt_1[31]_AND_127_o1:O)| NONE(*)(register_31_1023_LDC)| 1     |
+rst_n_comt_1[30]_AND_129_o(rst_n_comt_1[30]_AND_129_o1:O)| NONE(*)(register_31_1022_LDC)| 1     |
+rst_n_comt_1[27]_AND_135_o(rst_n_comt_1[27]_AND_135_o1:O)| NONE(*)(register_31_1019_LDC)| 1     |
+rst_n_comt_1[29]_AND_131_o(rst_n_comt_1[29]_AND_131_o1:O)| NONE(*)(register_31_1021_LDC)| 1     |
+rst_n_comt_1[28]_AND_133_o(rst_n_comt_1[28]_AND_133_o1:O)| NONE(*)(register_31_1020_LDC)| 1     |
+rst_n_comt_1[26]_AND_137_o(rst_n_comt_1[26]_AND_137_o1:O)| NONE(*)(register_31_1018_LDC)| 1     |
+rst_n_comt_1[25]_AND_139_o(rst_n_comt_1[25]_AND_139_o1:O)| NONE(*)(register_31_1017_LDC)| 1     |
+rst_n_comt_1[24]_AND_141_o(rst_n_comt_1[24]_AND_141_o1:O)| NONE(*)(register_31_1016_LDC)| 1     |
+rst_n_comt_1[23]_AND_143_o(rst_n_comt_1[23]_AND_143_o1:O)| NONE(*)(register_31_1015_LDC)| 1     |
+rst_n_comt_1[22]_AND_145_o(rst_n_comt_1[22]_AND_145_o1:O)| NONE(*)(register_31_1014_LDC)| 1     |
+rst_n_comt_1[21]_AND_147_o(rst_n_comt_1[21]_AND_147_o1:O)| NONE(*)(register_31_1013_LDC)| 1     |
+rst_n_comt_1[20]_AND_149_o(rst_n_comt_1[20]_AND_149_o1:O)| NONE(*)(register_31_1012_LDC)| 1     |
+rst_n_comt_1[19]_AND_151_o(rst_n_comt_1[19]_AND_151_o1:O)| NONE(*)(register_31_1011_LDC)| 1     |
+rst_n_comt_1[18]_AND_153_o(rst_n_comt_1[18]_AND_153_o1:O)| NONE(*)(register_31_1010_LDC)| 1     |
+rst_n_comt_1[17]_AND_155_o(rst_n_comt_1[17]_AND_155_o1:O)| NONE(*)(register_31_1009_LDC)| 1     |
+rst_n_comt_1[16]_AND_157_o(rst_n_comt_1[16]_AND_157_o1:O)| NONE(*)(register_31_1008_LDC)| 1     |
+rst_n_comt_1[15]_AND_159_o(rst_n_comt_1[15]_AND_159_o1:O)| NONE(*)(register_31_1007_LDC)| 1     |
+rst_n_comt_1[14]_AND_161_o(rst_n_comt_1[14]_AND_161_o1:O)| NONE(*)(register_31_1006_LDC)| 1     |
+rst_n_comt_1[13]_AND_163_o(rst_n_comt_1[13]_AND_163_o1:O)| NONE(*)(register_31_1005_LDC)| 1     |
+rst_n_comt_1[12]_AND_165_o(rst_n_comt_1[12]_AND_165_o1:O)| NONE(*)(register_31_1004_LDC)| 1     |
+rst_n_comt_1[11]_AND_167_o(rst_n_comt_1[11]_AND_167_o1:O)| NONE(*)(register_31_1003_LDC)| 1     |
+rst_n_comt_1[10]_AND_169_o(rst_n_comt_1[10]_AND_169_o1:O)| NONE(*)(register_31_1002_LDC)| 1     |
+rst_n_comt_1[9]_AND_171_o(rst_n_comt_1[9]_AND_171_o1:O)  | NONE(*)(register_31_1001_LDC)| 1     |
+rst_n_comt_1[8]_AND_173_o(rst_n_comt_1[8]_AND_173_o1:O)  | NONE(*)(register_31_1000_LDC)| 1     |
+rst_n_comt_1[7]_AND_175_o(rst_n_comt_1[7]_AND_175_o1:O)  | NONE(*)(register_31_999_LDC) | 1     |
+rst_n_comt_1[6]_AND_177_o(rst_n_comt_1[6]_AND_177_o1:O)  | NONE(*)(register_31_998_LDC) | 1     |
+rst_n_comt_1[5]_AND_179_o(rst_n_comt_1[5]_AND_179_o1:O)  | NONE(*)(register_31_997_LDC) | 1     |
+rst_n_comt_1[4]_AND_181_o(rst_n_comt_1[4]_AND_181_o1:O)  | NONE(*)(register_31_996_LDC) | 1     |
+rst_n_comt_1[3]_AND_183_o(rst_n_comt_1[3]_AND_183_o1:O)  | NONE(*)(register_31_995_LDC) | 1     |
+rst_n_comt_1[2]_AND_185_o(rst_n_comt_1[2]_AND_185_o1:O)  | NONE(*)(register_31_994_LDC) | 1     |
+rst_n_comt_1[1]_AND_187_o(rst_n_comt_1[1]_AND_187_o1:O)  | NONE(*)(register_31_993_LDC) | 1     |
+rst_n_comt_1[0]_AND_189_o(rst_n_comt_1[0]_AND_189_o1:O)  | NONE(*)(register_31_992_LDC) | 1     |
+rst_n_comt_2[31]_AND_191_o(rst_n_comt_2[31]_AND_191_o1:O)| NONE(*)(register_31_991_LDC) | 1     |
+rst_n_comt_2[30]_AND_193_o(rst_n_comt_2[30]_AND_193_o1:O)| NONE(*)(register_31_990_LDC) | 1     |
+rst_n_comt_2[29]_AND_195_o(rst_n_comt_2[29]_AND_195_o1:O)| NONE(*)(register_31_989_LDC) | 1     |
+rst_n_comt_2[26]_AND_201_o(rst_n_comt_2[26]_AND_201_o1:O)| NONE(*)(register_31_986_LDC) | 1     |
+rst_n_comt_2[28]_AND_197_o(rst_n_comt_2[28]_AND_197_o1:O)| NONE(*)(register_31_988_LDC) | 1     |
+rst_n_comt_2[27]_AND_199_o(rst_n_comt_2[27]_AND_199_o1:O)| NONE(*)(register_31_987_LDC) | 1     |
+rst_n_comt_2[25]_AND_203_o(rst_n_comt_2[25]_AND_203_o1:O)| NONE(*)(register_31_985_LDC) | 1     |
+rst_n_comt_2[24]_AND_205_o(rst_n_comt_2[24]_AND_205_o1:O)| NONE(*)(register_31_984_LDC) | 1     |
+rst_n_comt_2[23]_AND_207_o(rst_n_comt_2[23]_AND_207_o1:O)| NONE(*)(register_31_983_LDC) | 1     |
+rst_n_comt_2[22]_AND_209_o(rst_n_comt_2[22]_AND_209_o1:O)| NONE(*)(register_31_982_LDC) | 1     |
+rst_n_comt_2[21]_AND_211_o(rst_n_comt_2[21]_AND_211_o1:O)| NONE(*)(register_31_981_LDC) | 1     |
+rst_n_comt_2[20]_AND_213_o(rst_n_comt_2[20]_AND_213_o1:O)| NONE(*)(register_31_980_LDC) | 1     |
+rst_n_comt_2[19]_AND_215_o(rst_n_comt_2[19]_AND_215_o1:O)| NONE(*)(register_31_979_LDC) | 1     |
+rst_n_comt_2[18]_AND_217_o(rst_n_comt_2[18]_AND_217_o1:O)| NONE(*)(register_31_978_LDC) | 1     |
+rst_n_comt_2[17]_AND_219_o(rst_n_comt_2[17]_AND_219_o1:O)| NONE(*)(register_31_977_LDC) | 1     |
+rst_n_comt_2[16]_AND_221_o(rst_n_comt_2[16]_AND_221_o1:O)| NONE(*)(register_31_976_LDC) | 1     |
+rst_n_comt_2[15]_AND_223_o(rst_n_comt_2[15]_AND_223_o1:O)| NONE(*)(register_31_975_LDC) | 1     |
+rst_n_comt_2[14]_AND_225_o(rst_n_comt_2[14]_AND_225_o1:O)| NONE(*)(register_31_974_LDC) | 1     |
+rst_n_comt_2[13]_AND_227_o(rst_n_comt_2[13]_AND_227_o1:O)| NONE(*)(register_31_973_LDC) | 1     |
+rst_n_comt_2[12]_AND_229_o(rst_n_comt_2[12]_AND_229_o1:O)| NONE(*)(register_31_972_LDC) | 1     |
+rst_n_comt_2[11]_AND_231_o(rst_n_comt_2[11]_AND_231_o1:O)| NONE(*)(register_31_971_LDC) | 1     |
+rst_n_comt_2[10]_AND_233_o(rst_n_comt_2[10]_AND_233_o1:O)| NONE(*)(register_31_970_LDC) | 1     |
+rst_n_comt_2[9]_AND_235_o(rst_n_comt_2[9]_AND_235_o1:O)  | NONE(*)(register_31_969_LDC) | 1     |
+rst_n_comt_2[8]_AND_237_o(rst_n_comt_2[8]_AND_237_o1:O)  | NONE(*)(register_31_968_LDC) | 1     |
+rst_n_comt_2[7]_AND_239_o(rst_n_comt_2[7]_AND_239_o1:O)  | NONE(*)(register_31_967_LDC) | 1     |
+rst_n_comt_2[6]_AND_241_o(rst_n_comt_2[6]_AND_241_o1:O)  | NONE(*)(register_31_966_LDC) | 1     |
+rst_n_comt_2[5]_AND_243_o(rst_n_comt_2[5]_AND_243_o1:O)  | NONE(*)(register_31_965_LDC) | 1     |
+rst_n_comt_2[4]_AND_245_o(rst_n_comt_2[4]_AND_245_o1:O)  | NONE(*)(register_31_964_LDC) | 1     |
+rst_n_comt_2[3]_AND_247_o(rst_n_comt_2[3]_AND_247_o1:O)  | NONE(*)(register_31_963_LDC) | 1     |
+rst_n_comt_2[2]_AND_249_o(rst_n_comt_2[2]_AND_249_o1:O)  | NONE(*)(register_31_962_LDC) | 1     |
+rst_n_comt_2[1]_AND_251_o(rst_n_comt_2[1]_AND_251_o1:O)  | NONE(*)(register_31_961_LDC) | 1     |
+rst_n_comt_2[0]_AND_253_o(rst_n_comt_2[0]_AND_253_o1:O)  | NONE(*)(register_31_960_LDC) | 1     |
+---------------------------------------------------------+------------------------------+-------+
+(*) These 64 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.075ns (Maximum Frequency: 245.429MHz)
+   Minimum input arrival time before clock: 7.873ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.075ns (frequency: 245.429MHz)
+  Total number of paths / destination ports: 5568 / 1152
+-------------------------------------------------------------------------
+Delay:               4.075ns (Levels of Logic = 4)
+  Source:            register_31_928 (FF)
+  Destination:       r1_dout_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: register_31_928 to r1_dout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.684  register_31_928 (register_31_928)
+     LUT3:I2->O            2   0.205   0.864  Mmux_register[2][31]_r3_din[31]_mux_30_OUT11 (register[2][31]_r3_din[31]_mux_30_OUT<0>)
+     LUT6:I2->O            1   0.203   0.580  Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_82 (Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_82)
+     LUT6:I5->O            1   0.205   0.580  Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_4 (Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_4)
+     LUT6:I5->O            1   0.205   0.000  Mmux_GND_1_o_GND_1_o_mux_38_OUT11 (GND_1_o_GND_1_o_mux_38_OUT<0>)
+     FDE:D                     0.102          r1_dout_0
+    ----------------------------------------
+    Total                      4.075ns (1.367ns logic, 2.707ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 23488 / 2304
+-------------------------------------------------------------------------
+Offset:              7.873ns (Levels of Logic = 6)
+  Source:            r3_addr<0> (PAD)
+  Destination:       r1_dout_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: r3_addr<0> to r1_dout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   1.222   1.636  r3_addr_0_IBUF (r3_addr_0_IBUF)
+     LUT5:I0->O           64   0.203   1.868  GND_1_o_Decoder_0_OUT<2>1 (GND_1_o_Decoder_0_OUT<2>)
+     LUT3:I0->O            2   0.205   0.864  Mmux_register[2][31]_r3_din[31]_mux_30_OUT321 (register[2][31]_r3_din[31]_mux_30_OUT<9>)
+     LUT6:I2->O            1   0.203   0.580  Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_895 (Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_895)
+     LUT6:I5->O            1   0.205   0.580  Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_431 (Mmux_GND_1_o_X_1_o_wide_mux_33_OUT_431)
+     LUT6:I5->O            1   0.205   0.000  Mmux_GND_1_o_GND_1_o_mux_38_OUT321 (GND_1_o_GND_1_o_mux_38_OUT<9>)
+     FDE:D                     0.102          r1_dout_9
+    ----------------------------------------
+    Total                      7.873ns (2.345ns logic, 5.528ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[31]_AND_127_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1023_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[31]_AND_127_o falling
+
+  Data Path: rst_n to register_31_1023_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[31]_AND_128_o1 (rst_n_comt_1[31]_AND_128_o)
+     LDC:CLR                   0.430          register_31_1023_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[30]_AND_129_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1022_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[30]_AND_129_o falling
+
+  Data Path: rst_n to register_31_1022_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[30]_AND_130_o1 (rst_n_comt_1[30]_AND_130_o)
+     LDC:CLR                   0.430          register_31_1022_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[27]_AND_135_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1019_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[27]_AND_135_o falling
+
+  Data Path: rst_n to register_31_1019_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[27]_AND_136_o1 (rst_n_comt_1[27]_AND_136_o)
+     LDC:CLR                   0.430          register_31_1019_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[29]_AND_131_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1021_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[29]_AND_131_o falling
+
+  Data Path: rst_n to register_31_1021_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[29]_AND_132_o1 (rst_n_comt_1[29]_AND_132_o)
+     LDC:CLR                   0.430          register_31_1021_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[28]_AND_133_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1020_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[28]_AND_133_o falling
+
+  Data Path: rst_n to register_31_1020_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[28]_AND_134_o1 (rst_n_comt_1[28]_AND_134_o)
+     LDC:CLR                   0.430          register_31_1020_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[26]_AND_137_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1018_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[26]_AND_137_o falling
+
+  Data Path: rst_n to register_31_1018_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[26]_AND_138_o1 (rst_n_comt_1[26]_AND_138_o)
+     LDC:CLR                   0.430          register_31_1018_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[25]_AND_139_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1017_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[25]_AND_139_o falling
+
+  Data Path: rst_n to register_31_1017_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[25]_AND_140_o1 (rst_n_comt_1[25]_AND_140_o)
+     LDC:CLR                   0.430          register_31_1017_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[24]_AND_141_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1016_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[24]_AND_141_o falling
+
+  Data Path: rst_n to register_31_1016_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[24]_AND_142_o1 (rst_n_comt_1[24]_AND_142_o)
+     LDC:CLR                   0.430          register_31_1016_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[23]_AND_143_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1015_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[23]_AND_143_o falling
+
+  Data Path: rst_n to register_31_1015_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[23]_AND_144_o1 (rst_n_comt_1[23]_AND_144_o)
+     LDC:CLR                   0.430          register_31_1015_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[22]_AND_145_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1014_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[22]_AND_145_o falling
+
+  Data Path: rst_n to register_31_1014_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[22]_AND_146_o1 (rst_n_comt_1[22]_AND_146_o)
+     LDC:CLR                   0.430          register_31_1014_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[21]_AND_147_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1013_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[21]_AND_147_o falling
+
+  Data Path: rst_n to register_31_1013_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[21]_AND_148_o1 (rst_n_comt_1[21]_AND_148_o)
+     LDC:CLR                   0.430          register_31_1013_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[20]_AND_149_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1012_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[20]_AND_149_o falling
+
+  Data Path: rst_n to register_31_1012_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[20]_AND_150_o1 (rst_n_comt_1[20]_AND_150_o)
+     LDC:CLR                   0.430          register_31_1012_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[19]_AND_151_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1011_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[19]_AND_151_o falling
+
+  Data Path: rst_n to register_31_1011_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[19]_AND_152_o1 (rst_n_comt_1[19]_AND_152_o)
+     LDC:CLR                   0.430          register_31_1011_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[18]_AND_153_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1010_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[18]_AND_153_o falling
+
+  Data Path: rst_n to register_31_1010_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[18]_AND_154_o1 (rst_n_comt_1[18]_AND_154_o)
+     LDC:CLR                   0.430          register_31_1010_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[17]_AND_155_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1009_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[17]_AND_155_o falling
+
+  Data Path: rst_n to register_31_1009_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[17]_AND_156_o1 (rst_n_comt_1[17]_AND_156_o)
+     LDC:CLR                   0.430          register_31_1009_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[16]_AND_157_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1008_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[16]_AND_157_o falling
+
+  Data Path: rst_n to register_31_1008_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[16]_AND_158_o1 (rst_n_comt_1[16]_AND_158_o)
+     LDC:CLR                   0.430          register_31_1008_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[15]_AND_159_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1007_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[15]_AND_159_o falling
+
+  Data Path: rst_n to register_31_1007_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[15]_AND_160_o1 (rst_n_comt_1[15]_AND_160_o)
+     LDC:CLR                   0.430          register_31_1007_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[14]_AND_161_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1006_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[14]_AND_161_o falling
+
+  Data Path: rst_n to register_31_1006_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[14]_AND_162_o1 (rst_n_comt_1[14]_AND_162_o)
+     LDC:CLR                   0.430          register_31_1006_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[13]_AND_163_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1005_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[13]_AND_163_o falling
+
+  Data Path: rst_n to register_31_1005_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[13]_AND_164_o1 (rst_n_comt_1[13]_AND_164_o)
+     LDC:CLR                   0.430          register_31_1005_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[12]_AND_165_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1004_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[12]_AND_165_o falling
+
+  Data Path: rst_n to register_31_1004_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[12]_AND_166_o1 (rst_n_comt_1[12]_AND_166_o)
+     LDC:CLR                   0.430          register_31_1004_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[11]_AND_167_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1003_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[11]_AND_167_o falling
+
+  Data Path: rst_n to register_31_1003_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[11]_AND_168_o1 (rst_n_comt_1[11]_AND_168_o)
+     LDC:CLR                   0.430          register_31_1003_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[10]_AND_169_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1002_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[10]_AND_169_o falling
+
+  Data Path: rst_n to register_31_1002_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[10]_AND_170_o1 (rst_n_comt_1[10]_AND_170_o)
+     LDC:CLR                   0.430          register_31_1002_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[9]_AND_171_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1001_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[9]_AND_171_o falling
+
+  Data Path: rst_n to register_31_1001_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[9]_AND_172_o1 (rst_n_comt_1[9]_AND_172_o)
+     LDC:CLR                   0.430          register_31_1001_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[8]_AND_173_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_1000_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[8]_AND_173_o falling
+
+  Data Path: rst_n to register_31_1000_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[8]_AND_174_o1 (rst_n_comt_1[8]_AND_174_o)
+     LDC:CLR                   0.430          register_31_1000_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[7]_AND_175_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_999_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[7]_AND_175_o falling
+
+  Data Path: rst_n to register_31_999_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[7]_AND_176_o1 (rst_n_comt_1[7]_AND_176_o)
+     LDC:CLR                   0.430          register_31_999_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[6]_AND_177_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_998_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[6]_AND_177_o falling
+
+  Data Path: rst_n to register_31_998_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[6]_AND_178_o1 (rst_n_comt_1[6]_AND_178_o)
+     LDC:CLR                   0.430          register_31_998_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[5]_AND_179_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_997_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[5]_AND_179_o falling
+
+  Data Path: rst_n to register_31_997_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[5]_AND_180_o1 (rst_n_comt_1[5]_AND_180_o)
+     LDC:CLR                   0.430          register_31_997_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[4]_AND_181_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_996_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[4]_AND_181_o falling
+
+  Data Path: rst_n to register_31_996_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[4]_AND_182_o1 (rst_n_comt_1[4]_AND_182_o)
+     LDC:CLR                   0.430          register_31_996_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[3]_AND_183_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_995_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[3]_AND_183_o falling
+
+  Data Path: rst_n to register_31_995_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[3]_AND_184_o1 (rst_n_comt_1[3]_AND_184_o)
+     LDC:CLR                   0.430          register_31_995_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[2]_AND_185_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_994_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[2]_AND_185_o falling
+
+  Data Path: rst_n to register_31_994_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[2]_AND_186_o1 (rst_n_comt_1[2]_AND_186_o)
+     LDC:CLR                   0.430          register_31_994_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[1]_AND_187_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_993_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[1]_AND_187_o falling
+
+  Data Path: rst_n to register_31_993_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[1]_AND_188_o1 (rst_n_comt_1[1]_AND_188_o)
+     LDC:CLR                   0.430          register_31_993_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_1[0]_AND_189_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_992_LDC (LATCH)
+  Destination Clock: rst_n_comt_1[0]_AND_189_o falling
+
+  Data Path: rst_n to register_31_992_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_1[0]_AND_190_o1 (rst_n_comt_1[0]_AND_190_o)
+     LDC:CLR                   0.430          register_31_992_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[31]_AND_191_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_991_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[31]_AND_191_o falling
+
+  Data Path: rst_n to register_31_991_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[31]_AND_192_o1 (rst_n_comt_2[31]_AND_192_o)
+     LDC:CLR                   0.430          register_31_991_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[30]_AND_193_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_990_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[30]_AND_193_o falling
+
+  Data Path: rst_n to register_31_990_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[30]_AND_194_o1 (rst_n_comt_2[30]_AND_194_o)
+     LDC:CLR                   0.430          register_31_990_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[29]_AND_195_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_989_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[29]_AND_195_o falling
+
+  Data Path: rst_n to register_31_989_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[29]_AND_196_o1 (rst_n_comt_2[29]_AND_196_o)
+     LDC:CLR                   0.430          register_31_989_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[26]_AND_201_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_986_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[26]_AND_201_o falling
+
+  Data Path: rst_n to register_31_986_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[26]_AND_202_o1 (rst_n_comt_2[26]_AND_202_o)
+     LDC:CLR                   0.430          register_31_986_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[28]_AND_197_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_988_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[28]_AND_197_o falling
+
+  Data Path: rst_n to register_31_988_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[28]_AND_198_o1 (rst_n_comt_2[28]_AND_198_o)
+     LDC:CLR                   0.430          register_31_988_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[27]_AND_199_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_987_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[27]_AND_199_o falling
+
+  Data Path: rst_n to register_31_987_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[27]_AND_200_o1 (rst_n_comt_2[27]_AND_200_o)
+     LDC:CLR                   0.430          register_31_987_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[25]_AND_203_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_985_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[25]_AND_203_o falling
+
+  Data Path: rst_n to register_31_985_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[25]_AND_204_o1 (rst_n_comt_2[25]_AND_204_o)
+     LDC:CLR                   0.430          register_31_985_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[24]_AND_205_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_984_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[24]_AND_205_o falling
+
+  Data Path: rst_n to register_31_984_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[24]_AND_206_o1 (rst_n_comt_2[24]_AND_206_o)
+     LDC:CLR                   0.430          register_31_984_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[23]_AND_207_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_983_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[23]_AND_207_o falling
+
+  Data Path: rst_n to register_31_983_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[23]_AND_208_o1 (rst_n_comt_2[23]_AND_208_o)
+     LDC:CLR                   0.430          register_31_983_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[22]_AND_209_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_982_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[22]_AND_209_o falling
+
+  Data Path: rst_n to register_31_982_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[22]_AND_210_o1 (rst_n_comt_2[22]_AND_210_o)
+     LDC:CLR                   0.430          register_31_982_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[21]_AND_211_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_981_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[21]_AND_211_o falling
+
+  Data Path: rst_n to register_31_981_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[21]_AND_212_o1 (rst_n_comt_2[21]_AND_212_o)
+     LDC:CLR                   0.430          register_31_981_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[20]_AND_213_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_980_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[20]_AND_213_o falling
+
+  Data Path: rst_n to register_31_980_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[20]_AND_214_o1 (rst_n_comt_2[20]_AND_214_o)
+     LDC:CLR                   0.430          register_31_980_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[19]_AND_215_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_979_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[19]_AND_215_o falling
+
+  Data Path: rst_n to register_31_979_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[19]_AND_216_o1 (rst_n_comt_2[19]_AND_216_o)
+     LDC:CLR                   0.430          register_31_979_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[18]_AND_217_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_978_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[18]_AND_217_o falling
+
+  Data Path: rst_n to register_31_978_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[18]_AND_218_o1 (rst_n_comt_2[18]_AND_218_o)
+     LDC:CLR                   0.430          register_31_978_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[17]_AND_219_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_977_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[17]_AND_219_o falling
+
+  Data Path: rst_n to register_31_977_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[17]_AND_220_o1 (rst_n_comt_2[17]_AND_220_o)
+     LDC:CLR                   0.430          register_31_977_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[16]_AND_221_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_976_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[16]_AND_221_o falling
+
+  Data Path: rst_n to register_31_976_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[16]_AND_222_o1 (rst_n_comt_2[16]_AND_222_o)
+     LDC:CLR                   0.430          register_31_976_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[15]_AND_223_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_975_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[15]_AND_223_o falling
+
+  Data Path: rst_n to register_31_975_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[15]_AND_224_o1 (rst_n_comt_2[15]_AND_224_o)
+     LDC:CLR                   0.430          register_31_975_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[14]_AND_225_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_974_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[14]_AND_225_o falling
+
+  Data Path: rst_n to register_31_974_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[14]_AND_226_o1 (rst_n_comt_2[14]_AND_226_o)
+     LDC:CLR                   0.430          register_31_974_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[13]_AND_227_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_973_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[13]_AND_227_o falling
+
+  Data Path: rst_n to register_31_973_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[13]_AND_228_o1 (rst_n_comt_2[13]_AND_228_o)
+     LDC:CLR                   0.430          register_31_973_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[12]_AND_229_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_972_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[12]_AND_229_o falling
+
+  Data Path: rst_n to register_31_972_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[12]_AND_230_o1 (rst_n_comt_2[12]_AND_230_o)
+     LDC:CLR                   0.430          register_31_972_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[11]_AND_231_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_971_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[11]_AND_231_o falling
+
+  Data Path: rst_n to register_31_971_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[11]_AND_232_o1 (rst_n_comt_2[11]_AND_232_o)
+     LDC:CLR                   0.430          register_31_971_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[10]_AND_233_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_970_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[10]_AND_233_o falling
+
+  Data Path: rst_n to register_31_970_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[10]_AND_234_o1 (rst_n_comt_2[10]_AND_234_o)
+     LDC:CLR                   0.430          register_31_970_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[9]_AND_235_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_969_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[9]_AND_235_o falling
+
+  Data Path: rst_n to register_31_969_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[9]_AND_236_o1 (rst_n_comt_2[9]_AND_236_o)
+     LDC:CLR                   0.430          register_31_969_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[8]_AND_237_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_968_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[8]_AND_237_o falling
+
+  Data Path: rst_n to register_31_968_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[8]_AND_238_o1 (rst_n_comt_2[8]_AND_238_o)
+     LDC:CLR                   0.430          register_31_968_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[7]_AND_239_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_967_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[7]_AND_239_o falling
+
+  Data Path: rst_n to register_31_967_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[7]_AND_240_o1 (rst_n_comt_2[7]_AND_240_o)
+     LDC:CLR                   0.430          register_31_967_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[6]_AND_241_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_966_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[6]_AND_241_o falling
+
+  Data Path: rst_n to register_31_966_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[6]_AND_242_o1 (rst_n_comt_2[6]_AND_242_o)
+     LDC:CLR                   0.430          register_31_966_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[5]_AND_243_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_965_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[5]_AND_243_o falling
+
+  Data Path: rst_n to register_31_965_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[5]_AND_244_o1 (rst_n_comt_2[5]_AND_244_o)
+     LDC:CLR                   0.430          register_31_965_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[4]_AND_245_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_964_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[4]_AND_245_o falling
+
+  Data Path: rst_n to register_31_964_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[4]_AND_246_o1 (rst_n_comt_2[4]_AND_246_o)
+     LDC:CLR                   0.430          register_31_964_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[3]_AND_247_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_963_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[3]_AND_247_o falling
+
+  Data Path: rst_n to register_31_963_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[3]_AND_248_o1 (rst_n_comt_2[3]_AND_248_o)
+     LDC:CLR                   0.430          register_31_963_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[2]_AND_249_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_962_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[2]_AND_249_o falling
+
+  Data Path: rst_n to register_31_962_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[2]_AND_250_o1 (rst_n_comt_2[2]_AND_250_o)
+     LDC:CLR                   0.430          register_31_962_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[1]_AND_251_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_961_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[1]_AND_251_o falling
+
+  Data Path: rst_n to register_31_961_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[1]_AND_252_o1 (rst_n_comt_2[1]_AND_252_o)
+     LDC:CLR                   0.430          register_31_961_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'rst_n_comt_2[0]_AND_253_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              4.623ns (Levels of Logic = 2)
+  Source:            rst_n (PAD)
+  Destination:       register_31_960_LDC (LATCH)
+  Destination Clock: rst_n_comt_2[0]_AND_253_o falling
+
+  Data Path: rst_n to register_31_960_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           193   1.222   2.151  rst_n_IBUF (rst_n_IBUF)
+     LUT2:I0->O            2   0.203   0.616  rst_n_comt_2[0]_AND_254_o1 (rst_n_comt_2[0]_AND_254_o)
+     LDC:CLR                   0.430          register_31_960_LDC
+    ----------------------------------------
+    Total                      4.623ns (1.855ns logic, 2.768ns route)
+                                       (40.1% logic, 59.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            r1_dout_31 (FF)
+  Destination:       r1_dout<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: r1_dout_31 to r1_dout<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  r1_dout_31 (r1_dout_31)
+     OBUF:I->O                 2.571          r1_dout_31_OBUF (r1_dout<31>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+--------------------------+---------+---------+---------+---------+
+                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------+---------+---------+---------+---------+
+clk                       |    4.075|         |         |         |
+rst_n_comt_1[0]_AND_189_o |         |    4.125|         |         |
+rst_n_comt_1[10]_AND_169_o|         |    4.125|         |         |
+rst_n_comt_1[11]_AND_167_o|         |    4.125|         |         |
+rst_n_comt_1[12]_AND_165_o|         |    4.125|         |         |
+rst_n_comt_1[13]_AND_163_o|         |    4.125|         |         |
+rst_n_comt_1[14]_AND_161_o|         |    4.125|         |         |
+rst_n_comt_1[15]_AND_159_o|         |    4.125|         |         |
+rst_n_comt_1[16]_AND_157_o|         |    4.125|         |         |
+rst_n_comt_1[17]_AND_155_o|         |    4.125|         |         |
+rst_n_comt_1[18]_AND_153_o|         |    4.125|         |         |
+rst_n_comt_1[19]_AND_151_o|         |    4.125|         |         |
+rst_n_comt_1[1]_AND_187_o |         |    4.125|         |         |
+rst_n_comt_1[20]_AND_149_o|         |    4.125|         |         |
+rst_n_comt_1[21]_AND_147_o|         |    4.125|         |         |
+rst_n_comt_1[22]_AND_145_o|         |    4.125|         |         |
+rst_n_comt_1[23]_AND_143_o|         |    4.125|         |         |
+rst_n_comt_1[24]_AND_141_o|         |    4.125|         |         |
+rst_n_comt_1[25]_AND_139_o|         |    4.125|         |         |
+rst_n_comt_1[26]_AND_137_o|         |    4.125|         |         |
+rst_n_comt_1[27]_AND_135_o|         |    4.125|         |         |
+rst_n_comt_1[28]_AND_133_o|         |    4.125|         |         |
+rst_n_comt_1[29]_AND_131_o|         |    4.125|         |         |
+rst_n_comt_1[2]_AND_185_o |         |    4.125|         |         |
+rst_n_comt_1[30]_AND_129_o|         |    4.125|         |         |
+rst_n_comt_1[31]_AND_127_o|         |    4.125|         |         |
+rst_n_comt_1[3]_AND_183_o |         |    4.125|         |         |
+rst_n_comt_1[4]_AND_181_o |         |    4.125|         |         |
+rst_n_comt_1[5]_AND_179_o |         |    4.125|         |         |
+rst_n_comt_1[6]_AND_177_o |         |    4.125|         |         |
+rst_n_comt_1[7]_AND_175_o |         |    4.125|         |         |
+rst_n_comt_1[8]_AND_173_o |         |    4.125|         |         |
+rst_n_comt_1[9]_AND_171_o |         |    4.125|         |         |
+rst_n_comt_2[0]_AND_253_o |         |    4.227|         |         |
+rst_n_comt_2[10]_AND_233_o|         |    4.227|         |         |
+rst_n_comt_2[11]_AND_231_o|         |    4.227|         |         |
+rst_n_comt_2[12]_AND_229_o|         |    4.227|         |         |
+rst_n_comt_2[13]_AND_227_o|         |    4.227|         |         |
+rst_n_comt_2[14]_AND_225_o|         |    4.227|         |         |
+rst_n_comt_2[15]_AND_223_o|         |    4.227|         |         |
+rst_n_comt_2[16]_AND_221_o|         |    4.227|         |         |
+rst_n_comt_2[17]_AND_219_o|         |    4.227|         |         |
+rst_n_comt_2[18]_AND_217_o|         |    4.227|         |         |
+rst_n_comt_2[19]_AND_215_o|         |    4.227|         |         |
+rst_n_comt_2[1]_AND_251_o |         |    4.227|         |         |
+rst_n_comt_2[20]_AND_213_o|         |    4.227|         |         |
+rst_n_comt_2[21]_AND_211_o|         |    4.227|         |         |
+rst_n_comt_2[22]_AND_209_o|         |    4.227|         |         |
+rst_n_comt_2[23]_AND_207_o|         |    4.227|         |         |
+rst_n_comt_2[24]_AND_205_o|         |    4.227|         |         |
+rst_n_comt_2[25]_AND_203_o|         |    4.227|         |         |
+rst_n_comt_2[26]_AND_201_o|         |    4.227|         |         |
+rst_n_comt_2[27]_AND_199_o|         |    4.227|         |         |
+rst_n_comt_2[28]_AND_197_o|         |    4.227|         |         |
+rst_n_comt_2[29]_AND_195_o|         |    4.227|         |         |
+rst_n_comt_2[2]_AND_249_o |         |    4.227|         |         |
+rst_n_comt_2[30]_AND_193_o|         |    4.227|         |         |
+rst_n_comt_2[31]_AND_191_o|         |    4.227|         |         |
+rst_n_comt_2[3]_AND_247_o |         |    4.227|         |         |
+rst_n_comt_2[4]_AND_245_o |         |    4.227|         |         |
+rst_n_comt_2[5]_AND_243_o |         |    4.227|         |         |
+rst_n_comt_2[6]_AND_241_o |         |    4.227|         |         |
+rst_n_comt_2[7]_AND_239_o |         |    4.227|         |         |
+rst_n_comt_2[8]_AND_237_o |         |    4.227|         |         |
+rst_n_comt_2[9]_AND_235_o |         |    4.227|         |         |
+--------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 64.00 secs
+Total CPU time to Xst completion: 64.10 secs
+ 
+--> 
+
+Total memory usage is 350388 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun May 21 15:47:53 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "T5" LEVEL 1;
+COMP "show_data<0>" LOCATE = SITE "M13" LEVEL 1;
+COMP "show_data<1>" LOCATE = SITE "L14" LEVEL 1;
+COMP "show_data<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "show_data<3>" LOCATE = SITE "M14" LEVEL 1;
+COMP "show_data<4>" LOCATE = SITE "U18" LEVEL 1;
+COMP "show_data<5>" LOCATE = SITE "U17" LEVEL 1;
+COMP "show_data<6>" LOCATE = SITE "T18" LEVEL 1;
+COMP "show_data<7>" LOCATE = SITE "T17" LEVEL 1;
+COMP "sel<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "sel<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "sel<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "sel<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "out_addr<0>" LOCATE = SITE "T10" LEVEL 1;
+COMP "out_addr<1>" LOCATE = SITE "T9" LEVEL 1;
+COMP "out_addr<2>" LOCATE = SITE "V9" LEVEL 1;
+COMP "out_addr<3>" LOCATE = SITE "M8" LEVEL 1;
+COMP "out_addr<4>" LOCATE = SITE "N8" LEVEL 1;
+COMP "out_addr<5>" LOCATE = SITE "U8" LEVEL 1;
+COMP "out_addr<6>" LOCATE = SITE "B8" LEVEL 1;
+COMP "out_addr<7>" LOCATE = SITE "C4" LEVEL 1;
+COMP "memread_en" LOCATE = SITE "V8" LEVEL 1;
+SCHEMATIC END;
+

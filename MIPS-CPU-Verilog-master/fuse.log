@@ -1,0 +1,58 @@
+Running: D:\study\dig\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/study/COD lab/MIPS-CPU-Verilog-master/test_isim_beh.exe -prj D:/study/COD lab/MIPS-CPU-Verilog-master/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/ipcore_dir/IMEM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/ipcore_dir/DRAM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/SplitWord.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/SignExtend.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/REG_FILE.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/ControlUnit.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/BranchUnit.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/ALU.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/WB.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/MEM_WB.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/MEM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/IF_ID.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/IF.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/ID_EX.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/ID.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/Hazard.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/EX_MEM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/EX.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/CPU.v" into library work
+Analyzing Verilog file "D:/study/COD lab/MIPS-CPU-Verilog-master/test.v" into library work
+Analyzing Verilog file "D:/study/dig/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module IMEM
+Compiling module IF
+Compiling module IF_ID
+Compiling module ControlUnit
+Compiling module REG_FILE
+Compiling module SignExtend
+Compiling module BranchUnit
+Compiling module ID
+Compiling module ID_EX
+Compiling module ALU
+Compiling module EX
+Compiling module EX_MEM
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module DRAM
+Compiling module MEM
+Compiling module MEM_WB
+Compiling module SplitWord
+Compiling module WB
+Compiling module Hazard
+Compiling module CPU
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 16 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\test_isim_beh.exe.sim\libPortability.dll".
+Compiled 23 Verilog Units
+Built simulation executable D:/study/COD lab/MIPS-CPU-Verilog-master/test_isim_beh.exe
+Fuse Memory Usage: 30480 KB
+Fuse CPU Usage: 561 ms

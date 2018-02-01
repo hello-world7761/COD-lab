@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/zuchengyuanli/lab05/testofall.xst" -ofn "E:/zuchengyuanli/lab05/testofall.syr" 
+xst -intstyle ise -ifn "E:/zuchengyuanli/lab05/testofall.xst" -ofn "E:/zuchengyuanli/lab05/testofall.syr" 
+xst -intstyle ise -ifn "E:/zuchengyuanli/lab05/testofall.xst" -ofn "E:/zuchengyuanli/lab05/testofall.syr" 
+xst -intstyle ise -ifn "E:/zuchengyuanli/lab05/testofall.xst" -ofn "E:/zuchengyuanli/lab05/testofall.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-3 testofall.ngc testofall.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o testofall_map.ncd testofall.ngd testofall.pcf 

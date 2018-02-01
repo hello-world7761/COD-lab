@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\cpupipline\top.ncd
+OUTFILE=E:\cpupipline\top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\cpupipline
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

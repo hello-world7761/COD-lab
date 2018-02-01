@@ -1,0 +1,529 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Mar 28 13:34:57 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    64 out of  18,224    1%
+    Number used as Flip Flops:                  64
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        126 out of   9,112    1%
+    Number used as logic:                      125 out of   9,112    1%
+      Number using O6 output only:             105
+      Number using O5 output only:               0
+      Number using O5 and O6:                   20
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of   2,176    0%
+    Number used exclusively as route-thrus:      1
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    45 out of   2,278    1%
+  Number of MUXCYs used:                         4 out of   4,556    1%
+  Number of LUT Flip Flop pairs used:          135
+    Number with an unused Flip Flop:            90 out of     135   66%
+    Number with an unused LUT:                   9 out of     135    6%
+    Number of fully used LUT-FF pairs:          36 out of     135   26%
+    Number of unique control sets:               7
+    Number of slice register sites lost
+      to control set restrictions:              32 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        34 out of     232   14%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                5.39
+
+Peak Memory Usage:  464 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   7 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc6slx16' is a WebPack part.
+INFO:LIT:243 - Logical network Myram/doutb<31> has no load.
+INFO:LIT:395 - The above info message is repeated 31 more times for the
+   following (max. 5 shown):
+   Myram/doutb<30>,
+   Myram/doutb<29>,
+   Myram/doutb<28>,
+   Myram/doutb<27>,
+   Myram/doutb<26>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 120 block(s) removed
+   1 block(s) optimized away
+ 151 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "Myram/doutb<31>" is sourceless and has been removed.
+The signal "Myram/doutb<30>" is sourceless and has been removed.
+The signal "Myram/doutb<29>" is sourceless and has been removed.
+The signal "Myram/doutb<28>" is sourceless and has been removed.
+The signal "Myram/doutb<27>" is sourceless and has been removed.
+The signal "Myram/doutb<26>" is sourceless and has been removed.
+The signal "Myram/doutb<25>" is sourceless and has been removed.
+The signal "Myram/doutb<24>" is sourceless and has been removed.
+The signal "Myram/doutb<23>" is sourceless and has been removed.
+The signal "Myram/doutb<22>" is sourceless and has been removed.
+The signal "Myram/doutb<21>" is sourceless and has been removed.
+The signal "Myram/doutb<20>" is sourceless and has been removed.
+The signal "Myram/doutb<19>" is sourceless and has been removed.
+The signal "Myram/doutb<18>" is sourceless and has been removed.
+The signal "Myram/doutb<17>" is sourceless and has been removed.
+The signal "Myram/doutb<16>" is sourceless and has been removed.
+The signal "Myram/doutb<15>" is sourceless and has been removed.
+The signal "Myram/doutb<14>" is sourceless and has been removed.
+The signal "Myram/doutb<13>" is sourceless and has been removed.
+The signal "Myram/doutb<12>" is sourceless and has been removed.
+The signal "Myram/doutb<11>" is sourceless and has been removed.
+The signal "Myram/doutb<10>" is sourceless and has been removed.
+The signal "Myram/doutb<9>" is sourceless and has been removed.
+The signal "Myram/doutb<8>" is sourceless and has been removed.
+The signal "Myram/doutb<7>" is sourceless and has been removed.
+The signal "Myram/doutb<6>" is sourceless and has been removed.
+The signal "Myram/doutb<5>" is sourceless and has been removed.
+The signal "Myram/doutb<4>" is sourceless and has been removed.
+The signal "Myram/doutb<3>" is sourceless and has been removed.
+The signal "Myram/doutb<2>" is sourceless and has been removed.
+The signal "Myram/doutb<1>" is sourceless and has been removed.
+The signal "Myram/doutb<0>" is sourceless and has been removed.
+The signal "Myram/N0" is sourceless and has been removed.
+The signal "Myram/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "uuu/addra<31>" is unused and has been removed.
+ Unused block "uuu/addra_31" (FF) removed.
+  The signal "uuu/Result<31>" is unused and has been removed.
+   Unused block "uuu/Mcount_addra_xor<31>" (XOR) removed.
+    The signal "uuu/Mcount_addra_cy<30>" is unused and has been removed.
+     Unused block "uuu/Mcount_addra_cy<30>" (MUX) removed.
+      The signal "uuu/Mcount_addra_cy<29>" is unused and has been removed.
+       Unused block "uuu/Mcount_addra_cy<29>" (MUX) removed.
+        The signal "uuu/Mcount_addra_cy<28>" is unused and has been removed.
+         Unused block "uuu/Mcount_addra_cy<28>" (MUX) removed.
+          The signal "uuu/Mcount_addra_cy<27>" is unused and has been removed.
+           Unused block "uuu/Mcount_addra_cy<27>" (MUX) removed.
+            The signal "uuu/Mcount_addra_cy<26>" is unused and has been removed.
+             Unused block "uuu/Mcount_addra_cy<26>" (MUX) removed.
+              The signal "uuu/Mcount_addra_cy<25>" is unused and has been removed.
+               Unused block "uuu/Mcount_addra_cy<25>" (MUX) removed.
+                The signal "uuu/Mcount_addra_cy<24>" is unused and has been removed.
+                 Unused block "uuu/Mcount_addra_cy<24>" (MUX) removed.
+                  The signal "uuu/Mcount_addra_cy<23>" is unused and has been removed.
+                   Unused block "uuu/Mcount_addra_cy<23>" (MUX) removed.
+                    The signal "uuu/Mcount_addra_cy<22>" is unused and has been removed.
+                     Unused block "uuu/Mcount_addra_cy<22>" (MUX) removed.
+                      The signal "uuu/Mcount_addra_cy<21>" is unused and has been removed.
+                       Unused block "uuu/Mcount_addra_cy<21>" (MUX) removed.
+                        The signal "uuu/Mcount_addra_cy<20>" is unused and has been removed.
+                         Unused block "uuu/Mcount_addra_cy<20>" (MUX) removed.
+                          The signal "uuu/Mcount_addra_cy<19>" is unused and has been removed.
+                           Unused block "uuu/Mcount_addra_cy<19>" (MUX) removed.
+                            The signal "uuu/Mcount_addra_cy<18>" is unused and has been removed.
+                             Unused block "uuu/Mcount_addra_cy<18>" (MUX) removed.
+                              The signal "uuu/Mcount_addra_cy<17>" is unused and has been removed.
+                               Unused block "uuu/Mcount_addra_cy<17>" (MUX) removed.
+                                The signal "uuu/Mcount_addra_cy<16>" is unused and has been removed.
+                                 Unused block "uuu/Mcount_addra_cy<16>" (MUX) removed.
+                                  The signal "uuu/Mcount_addra_cy<15>" is unused and has been removed.
+                                   Unused block "uuu/Mcount_addra_cy<15>" (MUX) removed.
+                                    The signal "uuu/Mcount_addra_cy<14>" is unused and has been removed.
+                                     Unused block "uuu/Mcount_addra_cy<14>" (MUX) removed.
+                                      The signal "uuu/Mcount_addra_cy<13>" is unused and has been removed.
+                                       Unused block "uuu/Mcount_addra_cy<13>" (MUX) removed.
+                                        The signal "uuu/Mcount_addra_cy<12>" is unused and has been removed.
+                                         Unused block "uuu/Mcount_addra_cy<12>" (MUX) removed.
+                                          The signal "uuu/Mcount_addra_cy<11>" is unused and has been removed.
+                                           Unused block "uuu/Mcount_addra_cy<11>" (MUX) removed.
+                                            The signal "uuu/Mcount_addra_cy<10>" is unused and has been removed.
+                                             Unused block "uuu/Mcount_addra_cy<10>" (MUX) removed.
+                                              The signal "uuu/Mcount_addra_cy<9>" is unused and has been removed.
+                                               Unused block "uuu/Mcount_addra_cy<9>" (MUX) removed.
+                                                The signal "uuu/Mcount_addra_cy<8>" is unused and has been removed.
+                                                 Unused block "uuu/Mcount_addra_cy<8>" (MUX) removed.
+*The signal "uuu/Mcount_addra_cy<7>" is unused and has been removed.
+* Unused block "uuu/Mcount_addra_cy<7>" (MUX) removed.
+*  The signal "uuu/Mcount_addra_cy<6>" is unused and has been removed.
+*   Unused block "uuu/Mcount_addra_cy<6>" (MUX) removed.
+*    The signal "uuu/Mcount_addra_cy<5>" is unused and has been removed.
+*     Unused block "uuu/Mcount_addra_cy<5>" (MUX) removed.
+*      The signal "uuu/Mcount_addra_cy<4>" is unused and has been removed.
+*       Unused block "uuu/Mcount_addra_cy<4>" (MUX) removed.
+*        The signal "uuu/Mcount_addra_cy<3>" is unused and has been removed.
+*         Unused block "uuu/Mcount_addra_cy<3>" (MUX) removed.
+*          The signal "uuu/Mcount_addra_cy<2>" is unused and has been removed.
+*           Unused block "uuu/Mcount_addra_cy<2>" (MUX) removed.
+*            The signal "uuu/Mcount_addra_cy<1>" is unused and has been removed.
+*             Unused block "uuu/Mcount_addra_cy<1>" (MUX) removed.
+*              The signal "uuu/Mcount_addra_cy<0>" is unused and has been removed.
+*               Unused block "uuu/Mcount_addra_cy<0>" (MUX) removed.
+*                The signal "alu_op<5>" is unused and has been removed.
+*                 Unused block "XST_VCC" (ONE) removed.
+*              The signal "uuu/Mcount_addra_cy<1>_rt" is unused and has been removed.
+*               Unused block "uuu/Mcount_addra_cy<1>_rt" (ROM) removed.
+*            The signal "uuu/Mcount_addra_cy<2>_rt" is unused and has been removed.
+*             Unused block "uuu/Mcount_addra_cy<2>_rt" (ROM) removed.
+*          The signal "uuu/Mcount_addra_cy<3>_rt" is unused and has been removed.
+*           Unused block "uuu/Mcount_addra_cy<3>_rt" (ROM) removed.
+*        The signal "uuu/Mcount_addra_cy<4>_rt" is unused and has been removed.
+*         Unused block "uuu/Mcount_addra_cy<4>_rt" (ROM) removed.
+*      The signal "uuu/Mcount_addra_cy<5>_rt" is unused and has been removed.
+*       Unused block "uuu/Mcount_addra_cy<5>_rt" (ROM) removed.
+*        The signal "uuu/addra<5>" is unused and has been removed.
+*         Unused block "uuu/addra_5" (FF) removed.
+*          The signal "uuu/Result<5>" is unused and has been removed.
+*           Unused block "uuu/Mcount_addra_xor<5>" (XOR) removed.
+*    The signal "uuu/Mcount_addra_cy<6>_rt" is unused and has been removed.
+*     Unused block "uuu/Mcount_addra_cy<6>_rt" (ROM) removed.
+*      The signal "uuu/addra<6>" is unused and has been removed.
+*       Unused block "uuu/addra_6" (FF) removed.
+*        The signal "uuu/Result<6>" is unused and has been removed.
+*         Unused block "uuu/Mcount_addra_xor<6>" (XOR) removed.
+*  The signal "uuu/Mcount_addra_cy<7>_rt" is unused and has been removed.
+*   Unused block "uuu/Mcount_addra_cy<7>_rt" (ROM) removed.
+*    The signal "uuu/addra<7>" is unused and has been removed.
+*     Unused block "uuu/addra_7" (FF) removed.
+*      The signal "uuu/Result<7>" is unused and has been removed.
+*       Unused block "uuu/Mcount_addra_xor<7>" (XOR) removed.
+*The signal "uuu/Mcount_addra_cy<8>_rt" is unused and has been removed.
+* Unused block "uuu/Mcount_addra_cy<8>_rt" (ROM) removed.
+*  The signal "uuu/addra<8>" is unused and has been removed.
+*   Unused block "uuu/addra_8" (FF) removed.
+*    The signal "uuu/Result<8>" is unused and has been removed.
+*     Unused block "uuu/Mcount_addra_xor<8>" (XOR) removed.
+                                                The signal "uuu/Mcount_addra_cy<9>_rt" is unused and has been removed.
+                                                 Unused block "uuu/Mcount_addra_cy<9>_rt" (ROM) removed.
+*The signal "uuu/addra<9>" is unused and has been removed.
+* Unused block "uuu/addra_9" (FF) removed.
+*  The signal "uuu/Result<9>" is unused and has been removed.
+*   Unused block "uuu/Mcount_addra_xor<9>" (XOR) removed.
+                                              The signal "uuu/Mcount_addra_cy<10>_rt" is unused and has been removed.
+                                               Unused block "uuu/Mcount_addra_cy<10>_rt" (ROM) removed.
+                                                The signal "uuu/addra<10>" is unused and has been removed.
+                                                 Unused block "uuu/addra_10" (FF) removed.
+*The signal "uuu/Result<10>" is unused and has been removed.
+* Unused block "uuu/Mcount_addra_xor<10>" (XOR) removed.
+                                            The signal "uuu/Mcount_addra_cy<11>_rt" is unused and has been removed.
+                                             Unused block "uuu/Mcount_addra_cy<11>_rt" (ROM) removed.
+                                              The signal "uuu/addra<11>" is unused and has been removed.
+                                               Unused block "uuu/addra_11" (FF) removed.
+                                                The signal "uuu/Result<11>" is unused and has been removed.
+                                                 Unused block "uuu/Mcount_addra_xor<11>" (XOR) removed.
+                                          The signal "uuu/Mcount_addra_cy<12>_rt" is unused and has been removed.
+                                           Unused block "uuu/Mcount_addra_cy<12>_rt" (ROM) removed.
+                                            The signal "uuu/addra<12>" is unused and has been removed.
+                                             Unused block "uuu/addra_12" (FF) removed.
+                                              The signal "uuu/Result<12>" is unused and has been removed.
+                                               Unused block "uuu/Mcount_addra_xor<12>" (XOR) removed.
+                                        The signal "uuu/Mcount_addra_cy<13>_rt" is unused and has been removed.
+                                         Unused block "uuu/Mcount_addra_cy<13>_rt" (ROM) removed.
+                                          The signal "uuu/addra<13>" is unused and has been removed.
+                                           Unused block "uuu/addra_13" (FF) removed.
+                                            The signal "uuu/Result<13>" is unused and has been removed.
+                                             Unused block "uuu/Mcount_addra_xor<13>" (XOR) removed.
+                                      The signal "uuu/Mcount_addra_cy<14>_rt" is unused and has been removed.
+                                       Unused block "uuu/Mcount_addra_cy<14>_rt" (ROM) removed.
+                                        The signal "uuu/addra<14>" is unused and has been removed.
+                                         Unused block "uuu/addra_14" (FF) removed.
+                                          The signal "uuu/Result<14>" is unused and has been removed.
+                                           Unused block "uuu/Mcount_addra_xor<14>" (XOR) removed.
+                                    The signal "uuu/Mcount_addra_cy<15>_rt" is unused and has been removed.
+                                     Unused block "uuu/Mcount_addra_cy<15>_rt" (ROM) removed.
+                                      The signal "uuu/addra<15>" is unused and has been removed.
+                                       Unused block "uuu/addra_15" (FF) removed.
+                                        The signal "uuu/Result<15>" is unused and has been removed.
+                                         Unused block "uuu/Mcount_addra_xor<15>" (XOR) removed.
+                                  The signal "uuu/Mcount_addra_cy<16>_rt" is unused and has been removed.
+                                   Unused block "uuu/Mcount_addra_cy<16>_rt" (ROM) removed.
+                                    The signal "uuu/addra<16>" is unused and has been removed.
+                                     Unused block "uuu/addra_16" (FF) removed.
+                                      The signal "uuu/Result<16>" is unused and has been removed.
+                                       Unused block "uuu/Mcount_addra_xor<16>" (XOR) removed.
+                                The signal "uuu/Mcount_addra_cy<17>_rt" is unused and has been removed.
+                                 Unused block "uuu/Mcount_addra_cy<17>_rt" (ROM) removed.
+                                  The signal "uuu/addra<17>" is unused and has been removed.
+                                   Unused block "uuu/addra_17" (FF) removed.
+                                    The signal "uuu/Result<17>" is unused and has been removed.
+                                     Unused block "uuu/Mcount_addra_xor<17>" (XOR) removed.
+                              The signal "uuu/Mcount_addra_cy<18>_rt" is unused and has been removed.
+                               Unused block "uuu/Mcount_addra_cy<18>_rt" (ROM) removed.
+                                The signal "uuu/addra<18>" is unused and has been removed.
+                                 Unused block "uuu/addra_18" (FF) removed.
+                                  The signal "uuu/Result<18>" is unused and has been removed.
+                                   Unused block "uuu/Mcount_addra_xor<18>" (XOR) removed.
+                            The signal "uuu/Mcount_addra_cy<19>_rt" is unused and has been removed.
+                             Unused block "uuu/Mcount_addra_cy<19>_rt" (ROM) removed.
+                              The signal "uuu/addra<19>" is unused and has been removed.
+                               Unused block "uuu/addra_19" (FF) removed.
+                                The signal "uuu/Result<19>" is unused and has been removed.
+                                 Unused block "uuu/Mcount_addra_xor<19>" (XOR) removed.
+                          The signal "uuu/Mcount_addra_cy<20>_rt" is unused and has been removed.
+                           Unused block "uuu/Mcount_addra_cy<20>_rt" (ROM) removed.
+                            The signal "uuu/addra<20>" is unused and has been removed.
+                             Unused block "uuu/addra_20" (FF) removed.
+                              The signal "uuu/Result<20>" is unused and has been removed.
+                               Unused block "uuu/Mcount_addra_xor<20>" (XOR) removed.
+                        The signal "uuu/Mcount_addra_cy<21>_rt" is unused and has been removed.
+                         Unused block "uuu/Mcount_addra_cy<21>_rt" (ROM) removed.
+                          The signal "uuu/addra<21>" is unused and has been removed.
+                           Unused block "uuu/addra_21" (FF) removed.
+                            The signal "uuu/Result<21>" is unused and has been removed.
+                             Unused block "uuu/Mcount_addra_xor<21>" (XOR) removed.
+                      The signal "uuu/Mcount_addra_cy<22>_rt" is unused and has been removed.
+                       Unused block "uuu/Mcount_addra_cy<22>_rt" (ROM) removed.
+                        The signal "uuu/addra<22>" is unused and has been removed.
+                         Unused block "uuu/addra_22" (FF) removed.
+                          The signal "uuu/Result<22>" is unused and has been removed.
+                           Unused block "uuu/Mcount_addra_xor<22>" (XOR) removed.
+                    The signal "uuu/Mcount_addra_cy<23>_rt" is unused and has been removed.
+                     Unused block "uuu/Mcount_addra_cy<23>_rt" (ROM) removed.
+                      The signal "uuu/addra<23>" is unused and has been removed.
+                       Unused block "uuu/addra_23" (FF) removed.
+                        The signal "uuu/Result<23>" is unused and has been removed.
+                         Unused block "uuu/Mcount_addra_xor<23>" (XOR) removed.
+                  The signal "uuu/Mcount_addra_cy<24>_rt" is unused and has been removed.
+                   Unused block "uuu/Mcount_addra_cy<24>_rt" (ROM) removed.
+                    The signal "uuu/addra<24>" is unused and has been removed.
+                     Unused block "uuu/addra_24" (FF) removed.
+                      The signal "uuu/Result<24>" is unused and has been removed.
+                       Unused block "uuu/Mcount_addra_xor<24>" (XOR) removed.
+                The signal "uuu/Mcount_addra_cy<25>_rt" is unused and has been removed.
+                 Unused block "uuu/Mcount_addra_cy<25>_rt" (ROM) removed.
+                  The signal "uuu/addra<25>" is unused and has been removed.
+                   Unused block "uuu/addra_25" (FF) removed.
+                    The signal "uuu/Result<25>" is unused and has been removed.
+                     Unused block "uuu/Mcount_addra_xor<25>" (XOR) removed.
+              The signal "uuu/Mcount_addra_cy<26>_rt" is unused and has been removed.
+               Unused block "uuu/Mcount_addra_cy<26>_rt" (ROM) removed.
+                The signal "uuu/addra<26>" is unused and has been removed.
+                 Unused block "uuu/addra_26" (FF) removed.
+                  The signal "uuu/Result<26>" is unused and has been removed.
+                   Unused block "uuu/Mcount_addra_xor<26>" (XOR) removed.
+            The signal "uuu/Mcount_addra_cy<27>_rt" is unused and has been removed.
+             Unused block "uuu/Mcount_addra_cy<27>_rt" (ROM) removed.
+              The signal "uuu/addra<27>" is unused and has been removed.
+               Unused block "uuu/addra_27" (FF) removed.
+                The signal "uuu/Result<27>" is unused and has been removed.
+                 Unused block "uuu/Mcount_addra_xor<27>" (XOR) removed.
+          The signal "uuu/Mcount_addra_cy<28>_rt" is unused and has been removed.
+           Unused block "uuu/Mcount_addra_cy<28>_rt" (ROM) removed.
+            The signal "uuu/addra<28>" is unused and has been removed.
+             Unused block "uuu/addra_28" (FF) removed.
+              The signal "uuu/Result<28>" is unused and has been removed.
+               Unused block "uuu/Mcount_addra_xor<28>" (XOR) removed.
+        The signal "uuu/Mcount_addra_cy<29>_rt" is unused and has been removed.
+         Unused block "uuu/Mcount_addra_cy<29>_rt" (ROM) removed.
+          The signal "uuu/addra<29>" is unused and has been removed.
+           Unused block "uuu/addra_29" (FF) removed.
+            The signal "uuu/Result<29>" is unused and has been removed.
+             Unused block "uuu/Mcount_addra_xor<29>" (XOR) removed.
+      The signal "uuu/Mcount_addra_cy<30>_rt" is unused and has been removed.
+       Unused block "uuu/Mcount_addra_cy<30>_rt" (ROM) removed.
+        The signal "uuu/addra<30>" is unused and has been removed.
+         Unused block "uuu/addra_30" (FF) removed.
+          The signal "uuu/Result<30>" is unused and has been removed.
+           Unused block "uuu/Mcount_addra_xor<30>" (XOR) removed.
+The signal "uuu/wea" is unused and has been removed.
+ Unused block "uuu/wea" (FF) removed.
+Unused block
+"Myram/U0/xst_blk_mem_generator/gnative_mem_map_bmg.native_mem_map_blk_mem_gen/v
+alid.cstr/ramloop[0].ram.r/s6_init.ram/SDP.WIDE_PRIM9.ram" (RAMB8BWER) removed.
+Unused block "Myram/XST_GND" (ZERO) removed.
+Unused block "Myram/XST_VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| result<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<4>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<5>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<6>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<7>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<8>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<9>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<10>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<11>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<12>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<13>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<14>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<15>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<16>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<17>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<18>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<19>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<20>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<21>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<22>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<23>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<24>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<25>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<26>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<27>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<28>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<29>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<30>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| result<31>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rst_n                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

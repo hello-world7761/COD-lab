@@ -1,0 +1,14 @@
+Running: D:\study\dig\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/study/COD lab/lab3/lab3/testtop_isim_beh.exe -prj D:/study/COD lab/lab3/lab3/testtop_beh.prj work.testtop work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/study/COD lab/lab3/lab3/../REG_FILE.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab3/lab3/../control.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab3/lab3/../alu.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab3/lab3/../top(1).v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab3/lab3/../testtop.v" into library work
+Analyzing Verilog file "D:/study/dig/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "D:/study/COD lab/lab3/lab3/../top(1).v" Line 41: Instantiating <RAM> from unknown module <myram>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

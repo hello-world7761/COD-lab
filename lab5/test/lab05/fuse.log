@@ -1,0 +1,40 @@
+Running: D:\study\dig\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/study/COD lab/lab5/test/lab05/testofall_isim_beh.exe -prj D:/study/COD lab/lab5/test/lab05/testofall_beh.prj work.testofall work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/REG_WRITE_DATA.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/REG_FILE.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/NEXT_PC.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/ipcore_dir/text_RAM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/ipcore_dir/data_RAM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/EX_IMM.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/decode.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/ALU_control.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/ALU.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/top.v" into library work
+Analyzing Verilog file "D:/study/COD lab/lab5/test/lab05/testofall.v" into library work
+Analyzing Verilog file "D:/study/dig/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module decode
+Compiling module REG_WRITE_DATA
+Compiling module REG_FILE
+Compiling module ALU
+Compiling module ALU_control
+Compiling module EX_IMM
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module data_RAM
+Compiling module NEXT_PC
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module text_RAM
+Compiling module top
+Compiling module testofall
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\testofall_isim_beh.exe.sim\libPortability.dll".
+Compiled 14 Verilog Units
+Built simulation executable D:/study/COD lab/lab5/test/lab05/testofall_isim_beh.exe
+Fuse Memory Usage: 29548 KB
+Fuse CPU Usage: 452 ms

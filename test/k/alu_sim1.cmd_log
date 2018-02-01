@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/study/COD lab/test/k/alu_sim1.xst" -ofn "D:/study/COD lab/test/k/alu_sim1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "alu_sim1.ngc" alu_sim1.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 "alu_sim1.ngc" alu_sim1.ngd  
